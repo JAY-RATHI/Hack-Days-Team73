@@ -1,0 +1,359 @@
+
+======================================================================
+TABLE: cities   (3 rows, 6 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+city_id              str
+city_name            str
+population         int64
+transit_density      str
+market_tier          str
+timezone             str
+----------------------------------------------------------------------
+Sample rows:
+  city_id       city_name  population transit_density market_tier          timezone
+0      LH    Las Hackland     3200000           dense     premium  America/New_York
+1     ACS  Accordionshire      850000       sprawling       value   America/Chicago
+2     DAT         DA Town     1450000           mixed    standard    America/Denver
+----------------------------------------------------------------------
+Columns with missing values:
+  (none)
+
+======================================================================
+TABLE: zone_demographics   (30 rows, 15 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+zone_id                              str
+city_id                              str
+zone_name                            str
+resident_population                int64
+population_density_per_sqkm        int64
+median_age                       float64
+pct_age_under_18                 float64
+pct_age_18_34                    float64
+pct_age_35_54                    float64
+pct_age_55_plus                  float64
+median_household_income            int64
+income_index                     float64
+pct_bachelor_or_higher           float64
+dominant_occupation                  str
+daytime_population_multiplier    float64
+----------------------------------------------------------------------
+Sample rows:
+       zone_id city_id          zone_name  resident_population  population_density_per_sqkm  median_age  pct_age_under_18  pct_age_18_34  pct_age_35_54  pct_age_55_plus  median_household_income  income_index  pct_bachelor_or_higher dominant_occupation  daytime_population_multiplier
+0  LH-ZONE-001      LH      Downtown Core               107560                        14480        32.6               6.7           39.0           38.5             15.8                   134615         141.7                    64.9        white_collar                           3.39
+1  LH-ZONE-002      LH        Harborfront               344279                         7107        44.7              13.9           26.2           30.9             29.0                    99465         104.7                    43.8               mixed                           1.52
+2  LH-ZONE-003      LH  Old Mill District               305120                         6637        43.3              22.9           22.6           30.4             24.1                    80560          84.8                    22.3         blue_collar                           1.40
+----------------------------------------------------------------------
+Columns with missing values:
+  (none)
+
+======================================================================
+TABLE: locations   (910 rows, 6 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+location_id      str
+city_id          str
+name             str
+city_zone        str
+zone_id          str
+location_type    str
+----------------------------------------------------------------------
+Sample rows:
+   location_id city_id                         name          city_zone      zone_id location_type
+0  LH-LOC-0120      LH       Grant Rd & Kingsley Rd      Financial Row  LH-ZONE-005      bus_stop
+1  LH-LOC-0135      LH  Concourse Ave & Prospect St       East Commons  LH-ZONE-010      bus_stop
+2  LH-LOC-0311      LH     Beacon St & Turnpike Ave  Cathedral Heights  LH-ZONE-006      bus_stop
+----------------------------------------------------------------------
+Columns with missing values:
+  (none)
+
+======================================================================
+TABLE: route_stops   (2436 rows, 11 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+route_id           str
+corridor_id        str
+city_id            str
+route_name         str
+mode               str
+direction          str
+stop_sequence    int64
+location_id        str
+is_first_stop     bool
+is_last_stop      bool
+num_stops        int64
+----------------------------------------------------------------------
+Sample rows:
+         route_id corridor_id city_id route_name mode direction  stop_sequence  location_id  is_first_stop  is_last_stop  num_stops
+0  LH-RT-B001-OUT  LH-RT-B001      LH   Route B1  bus  outbound              1  LH-LOC-0236           True         False         14
+1  LH-RT-B001-OUT  LH-RT-B001      LH   Route B1  bus  outbound              2  LH-LOC-0316          False         False         14
+2  LH-RT-B001-OUT  LH-RT-B001      LH   Route B1  bus  outbound              3  LH-LOC-0136          False         False         14
+----------------------------------------------------------------------
+Columns with missing values:
+  (none)
+
+======================================================================
+TABLE: vehicles   (854 rows, 5 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+vehicle_id        str
+city_id           str
+vehicle_type      str
+corridor_id       str
+screen_count    int64
+----------------------------------------------------------------------
+Sample rows:
+     vehicle_id city_id vehicle_type corridor_id  screen_count
+0  LH-VEH-00001      LH          bus  LH-RT-B001             3
+1  LH-VEH-00002      LH          bus  LH-RT-B001             3
+2  LH-VEH-00003      LH          bus  LH-RT-B001             3
+----------------------------------------------------------------------
+Columns with missing values:
+  (none)
+
+======================================================================
+TABLE: route_schedules   (19838 rows, 7 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+schedule_id              str
+route_id                 str
+corridor_id              str
+direction                str
+day_type                 str
+start_time               str
+estimated_ridership    int64
+----------------------------------------------------------------------
+Sample rows:
+     schedule_id        route_id corridor_id direction day_type start_time  estimated_ridership
+0  LH-SCH-000001  LH-RT-B001-OUT  LH-RT-B001  outbound  weekday      05:03                   20
+1  LH-SCH-000002  LH-RT-B001-OUT  LH-RT-B001  outbound  weekday      05:47                   17
+2  LH-SCH-000003  LH-RT-B001-OUT  LH-RT-B001  outbound  weekday      06:31                   91
+----------------------------------------------------------------------
+Columns with missing values:
+  (none)
+
+======================================================================
+TABLE: ridership_actuals   (2049632 rows, 7 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+schedule_id           str
+route_id              str
+city_id               str
+date                  str
+day_of_week           str
+is_holiday           bool
+actual_ridership    int64
+----------------------------------------------------------------------
+Sample rows:
+     schedule_id        route_id city_id        date day_of_week  is_holiday  actual_ridership
+0  LH-SCH-000001  LH-RT-B001-OUT      LH  2026-02-19    Thursday       False                21
+1  LH-SCH-000001  LH-RT-B001-OUT      LH  2026-02-20      Friday       False                25
+2  LH-SCH-000001  LH-RT-B001-OUT      LH  2026-02-23      Monday       False                21
+----------------------------------------------------------------------
+Columns with missing values:
+  (none)
+
+======================================================================
+TABLE: screens   (11163 rows, 7 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+screen_id      str
+city_id        str
+screen_type    str
+location_id    str
+vehicle_id     str
+position       str
+screen_size    str
+----------------------------------------------------------------------
+Sample rows:
+       screen_id city_id screen_type  location_id vehicle_id position screen_size
+0  LH-SCR-000001      LH    bus_stop  LH-LOC-0120        NaN      top           M
+1  LH-SCR-000002      LH    bus_stop  LH-LOC-0120        NaN     left           S
+2  LH-SCR-000003      LH    bus_stop  LH-LOC-0120        NaN    right           S
+----------------------------------------------------------------------
+Columns with missing values:
+location_id    2615
+vehicle_id     8548
+position       1400
+
+======================================================================
+TABLE: points_of_interest   (1375 rows, 13 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+poi_id                         str
+city_id                        str
+city_zone                      str
+name                           str
+poi_type                       str
+scale                          str
+est_daily_footfall           int64
+anchor_location_id             str
+distance_to_location_km    float64
+distance_to_location_mi    float64
+is_network_hub                bool
+side_of_road                   str
+peak_daypart                   str
+----------------------------------------------------------------------
+Sample rows:
+        poi_id city_id          city_zone                                         name          poi_type         scale  est_daily_footfall anchor_location_id  distance_to_location_km  distance_to_location_mi  is_network_hub side_of_road peak_daypart
+0  LH-POI-0001      LH      Financial Row                Financial Row Heritage Museum            museum      flagship               29380        LH-LOC-0120                    0.384                    0.239           False     far_side    afternoon
+1  LH-POI-0002      LH       East Commons                            East Commons Mall     shopping_mall      flagship                8525        LH-LOC-0135                    0.782                    0.486           False     far_side      evening
+2  LH-POI-0003      LH  Cathedral Heights  Cathedral Heights Hotel & Conference Center  hotel_convention  neighborhood                 521        LH-LOC-0311                    0.409                    0.254           False     far_side       midday
+----------------------------------------------------------------------
+Columns with missing values:
+  (none)
+
+======================================================================
+TABLE: events   (367 rows, 14 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+event_id                      str
+city_id                       str
+city_zone                     str
+poi_id                        str
+anchor_location_id            str
+event_name                    str
+event_type                    str
+recurrence                    str
+start_date                    str
+end_date                      str
+expected_attendance         int64
+attendance_tier               str
+primary_impact_daypart        str
+impact_radius_km          float64
+----------------------------------------------------------------------
+Sample rows:
+        event_id city_id    city_zone        poi_id anchor_location_id                  event_name       event_type recurrence  start_date    end_date  expected_attendance attendance_tier primary_impact_daypart  impact_radius_km
+0  ACS-EVT-00062     ACS  Fallowfield  ACS-POI-0337       ACS-LOC-0004  Neon Nights Concert Series          concert   one_time  2025-08-26  2025-08-26                23290           large                evening              2.34
+1  ACS-EVT-00051     ACS  Fallowfield  ACS-POI-0316       ACS-LOC-0120   ACS Food & Music Festival         festival   one_time  2025-08-28  2025-08-28                12524          medium              afternoon              0.85
+2  ACS-EVT-00074     ACS   Pine Hatch           NaN       ACS-LOC-0017             Community Rally  political_rally   one_time  2025-08-29  2025-08-29                 9191          medium              afternoon              0.83
+----------------------------------------------------------------------
+Columns with missing values:
+poi_id    86
+
+======================================================================
+TABLE: client_facts   (520 rows, 15 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+client_id                         str
+company_name                      str
+industry                          str
+client_tier                       str
+home_city_id                      str
+active_cities                     str
+preferred_geographies             str
+typical_campaign_budget       float64
+budget_variance_pct           float64
+campaign_frequency                str
+avg_campaign_duration_days      int64
+bundle_affinity                   str
+negotiation_leverage              str
+relationship_start_date           str
+account_status                    str
+----------------------------------------------------------------------
+Sample rows:
+   client_id          company_name       industry     client_tier home_city_id active_cities preferred_geographies  typical_campaign_budget  budget_variance_pct campaign_frequency  avg_campaign_duration_days bundle_affinity negotiation_leverage relationship_start_date account_status
+0  CLI-00001  Cinema Entertainment  entertainment  local_business          DAT           DAT      DAT:Central Yard                  12900.0                 0.28            one_off                          25   single_screen                  low              2021-10-08         active
+1  CLI-00002          Care Clinics     healthcare  local_business          DAT           DAT       DAT:Ashford Row                   6200.0                 0.44           seasonal                           8   single_screen               medium              2026-02-10         active
+2  CLI-00003           Ledger Bank        finance  local_business          DAT           DAT       DAT:Ashford Row                  16600.0                 0.30           seasonal                          25   single_screen                  low              2025-12-05         active
+----------------------------------------------------------------------
+Columns with missing values:
+  (none)
+
+======================================================================
+TABLE: dim_slot   (6 rows, 5 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+time_block_id       int64
+time_block_label      str
+start_hour          int64
+end_hour            int64
+nearest_daypart       str
+----------------------------------------------------------------------
+Sample rows:
+   time_block_id time_block_label  start_hour  end_hour nearest_daypart
+0              1      00:00-04:00           0         4           night
+1              2      04:00-08:00           4         8         morning
+2              3      08:00-12:00           8        12          midday
+----------------------------------------------------------------------
+Columns with missing values:
+  (none)
+
+======================================================================
+TABLE: bookings   (191109 rows, 21 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+booking_id                               str
+deal_id                                  str
+client_id                                str
+city_id                                  str
+screen_id                                str
+ad_type                                  str
+industry_vertical                        str
+campaign_objective                       str
+time_block_id                          int64
+daypart                                  str
+slots_booked_per_day                   int64
+rotation_type                            str
+start_date                               str
+end_date                                 str
+duration_days                          int64
+booked_date                              str
+contracted_price_per_slot_per_day    float64
+line_item_value                      float64
+deal_total_value                     float64
+is_bundle                               bool
+booking_status                           str
+----------------------------------------------------------------------
+Sample rows:
+        booking_id      deal_id  client_id city_id       screen_id                                ad_type industry_vertical campaign_objective  time_block_id    daypart  slots_booked_per_day     rotation_type  start_date    end_date  duration_days booked_date  contracted_price_per_slot_per_day  line_item_value  deal_total_value  is_bundle booking_status
+0  DAT-BKG-0000001  DEAL-000001  CLI-00001     DAT  DAT-SCR-002597  Concert Tour Announcement (Frequency)     entertainment          frequency              5    evening                     1   single_rotation  2026-03-01  2026-03-27             27  2026-02-08                             119.26          3220.02           3220.02      False      completed
+1  DAT-BKG-0000002  DEAL-000002  CLI-00001     DAT  DAT-SCR-002432       Movie Release Teaser (Awareness)     entertainment          awareness              4  afternoon                     2  partial_rotation  2025-09-03  2025-10-03             31  2025-08-17                              90.70          5623.40          16562.06       True      completed
+2  DAT-BKG-0000003  DEAL-000002  CLI-00001     DAT  DAT-SCR-002177       Movie Release Teaser (Awareness)     entertainment          awareness              4  afternoon                     2  partial_rotation  2025-09-03  2025-10-03             31  2025-08-17                             121.37          7524.94          16562.06       True      completed
+----------------------------------------------------------------------
+Columns with missing values:
+  (none)
+
+======================================================================
+TABLE: lost_leads   (1450 rows, 24 columns)
+----------------------------------------------------------------------
+Columns and dtypes:
+lead_id                                     str
+client_id                                   str
+company_name_raw                            str
+industry_vertical                           str
+city_id                                     str
+requested_geography                         str
+anchor_screen_id                            str
+lead_source                                 str
+lead_date                                   str
+sales_stage_reached                         str
+lost_date                                   str
+requested_start_date                        str
+requested_duration_days                   int64
+requested_num_screens                     int64
+indicated_budget                        float64
+quoted_price_per_slot_per_day           float64
+client_target_price_per_slot_per_day    float64
+price_gap_pct                           float64
+negotiation_rounds                        int64
+competitor_mentioned                       bool
+loss_reason                                 str
+loss_reason_detail                          str
+campaign_objective                          str
+ad_type                                     str
+----------------------------------------------------------------------
+Sample rows:
+       lead_id  client_id company_name_raw industry_vertical city_id requested_geography anchor_screen_id            lead_source   lead_date sales_stage_reached   lost_date requested_start_date  requested_duration_days  requested_num_screens  indicated_budget  quoted_price_per_slot_per_day  client_target_price_per_slot_per_day  price_gap_pct  negotiation_rounds  competitor_mentioned                  loss_reason                                 loss_reason_detail campaign_objective                                    ad_type
+0  LEAD-000001  CLI-00063              NaN        healthcare      LH     LH:East Commons    LH-SCR-002131  repeat_client_inquiry  2025-10-29       contract_sent  2025-12-23           2026-01-16                       87                      1         152659.64                          81.19                                 78.10         0.0396                   3                  True  contract_terms_disagreement     Disagreement over cancellation/make-good terms         conversion       New Clinic Announcement (Conversion)
+1  LEAD-000002  CLI-00502              NaN       hospitality     DAT   DAT:Lakeside Loop   DAT-SCR-002830               referral  2026-06-14         negotiating  2026-06-22           2026-07-05                       23                      9           4111.23                          58.38                                 40.15         0.4540                   3                 False               price_too_high     Client benchmarked against a cheaper media mix          frequency       Loyalty Membership Drive (Frequency)
+2  LEAD-000003  CLI-00129              NaN           finance     ACS     ACS:Greenhollow   ACS-SCR-001302  repeat_client_inquiry  2026-04-22          quote_sent  2026-04-30           2026-05-23                       15                      2          17548.91                          70.19                                 56.01         0.2532                   0                 False               price_too_high  Rate card premium on hub screens broke the budget          frequency  Retirement Planning Awareness (Frequency)
+----------------------------------------------------------------------
+Columns with missing values:
+client_id                               643
+company_name_raw                        807
+quoted_price_per_slot_per_day           531
+client_target_price_per_slot_per_day    690
+price_gap_pct                           690
+
