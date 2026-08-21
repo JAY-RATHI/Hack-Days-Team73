@@ -1,0 +1,73 @@
+======================================================================
+SECTION 1: Raw table load
+======================================================================
+[PASS] cities row count — 3 (expected 3)
+[PASS] zone_demographics row count — 30 (expected 30)
+[PASS] locations row count — 910 (expected 910)
+[PASS] route_stops row count — 2436 (expected 2436)
+[PASS] vehicles row count — 854 (expected 854)
+[PASS] route_schedules row count — 19838 (expected 19838)
+[PASS] ridership_actuals row count — 2049632 (expected 2049632)
+[PASS] screens row count — 11163 (expected 11163)
+[PASS] points_of_interest row count — 1375 (expected 1375)
+[PASS] events row count — 367 (expected 367)
+[PASS] client_facts row count — 520 (expected 520)
+[PASS] dim_slot row count — 6 (expected 6)
+[PASS] bookings row count — 191109 (expected 191109)
+[PASS] lost_leads row count — 1450 (expected 1450)
+
+======================================================================
+SECTION 2: screen_geo_map
+======================================================================
+[PASS] screen_geo_map covers all screens — 11163 of 11163
+[PASS] fixed screen count ~8548 — got 8548
+[PASS] vehicle screen count ~2615 — got 2615
+[PASS] fixed+vehicle = total, no leftover kind — 8548+2615 vs 11163
+[PASS] screens with no zone resolved — 0 screens have null zone_id — these will fall back to nothing in demographics
+[PASS] fixed screens with zero corridors serving their stop — 0 (0.0%) — these get riders_in_block=0, likely to land in low/medium confidence
+
+======================================================================
+SECTION 3: screen_cluster_map / corridor_overlap
+======================================================================
+[PASS] largest cluster size (should be tens, not thousands) — 100 screens in the biggest cluster
+[WARN] cluster count vs screen count (many small clusters expected) — 1004 clusters for 11163 screens
+[PASS] screens with unresolved clustering — 0 screens (these have neither location nor corridor info)
+[PASS] corridor_overlap has rows — 116 overlapping corridor pairs found
+[PASS] jaccard values in valid range [0,1] — min=0.05, max=0.35
+
+======================================================================
+SECTION 4: corridor_timeblock_ridership
+======================================================================
+time_block_id
+2    5923.0
+3    7641.0
+4    3422.0
+5    8532.0
+6    2788.0
+[WARN] block 1 present in ridership data — no night-block trips at all — check if that's expected
+[PASS] peak blocks (2,3,5) higher than off-peak on average
+
+======================================================================
+SECTION 5: screen_audience_profile (the main deliverable)
+======================================================================
+[PASS] row count = screens x 6 blocks — 66978 (expected 66978)
+[PASS] no duplicate (screen_id, time_block_id) pairs — 0 duplicates
+Confidence distribution: {'high': 40505, 'medium': 23411, 'low': 3062}
+[PASS] confidence distribution isn't degenerate (not ~100% one tier) — 4.6% low-confidence
+[PASS] low-confidence rows don't name specific POIs (sampled 500) — clean
+[PASS] no empty/near-empty profile_text — 0 rows
+
+======================================================================
+SECTION 6: cross-table referential integrity
+======================================================================
+[PASS] every profile screen_id exists in screens — 0 orphans
+[PASS] every resolved zone_id exists in zone_demographics — 0 orphans
+
+======================================================================
+SUMMARY
+======================================================================
+PASS: 32   WARN: 2   FAIL: 0
+
+WARNs worth a second look (may be fine depending on your data):
+  - cluster count vs screen count (many small clusters expected): 1004 clusters for 11163 screens
+  - block 1 present in ridership data: no night-block trips at all — check if that's expected
