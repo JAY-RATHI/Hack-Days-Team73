@@ -1,0 +1,7 @@
+file,status,n_screens_scored,pairs_selected,total_cost,budget,budget_util_pct,impressions_per_week,avg_relevance
+campaign_1.docx,ok,33954,14,38161.35,40000.0,95.4,4268660.0,0.696
+campaign_2.docx,ok,66978,15,11988.48,12000.0,99.9,3273562.0,0.804
+campaign_3.docx,ok,66978,24,21855.6,22000.0,99.3,5882396.0,0.715
+campaign_4.docx,ok,37824,12,8562.75,9000.0,95.1,3238505.0,0.857
+campaign_5.docx,ok,37824,16,34339.6,35000.0,98.1,4552467.0,0.722
+campaign_6.docx,ok,66978,19,19522.0,20000.0,97.6,4381984.0,0.633

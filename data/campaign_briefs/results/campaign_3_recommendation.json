@@ -1,0 +1,1951 @@
+{
+  "brief": "campaign_3",
+  "status": "ok",
+  "campaign": {
+    "objective": "conversion",
+    "target_audience": {
+      "age_range": [
+        20,
+        40
+      ],
+      "income_tier": "mid",
+      "descriptors": [
+        "style-conscious shoppers",
+        "working professional",
+        "student",
+        "seasonal shoppers",
+        "weekend shoppers",
+        "post-work weekday evenings"
+      ],
+      "poi_affinities": [
+        "shopping_mall"
+      ]
+    },
+    "budget": 22000.0,
+    "duration_days": 20,
+    "rotation_slots_per_day": null,
+    "requested_dayparts": [
+      "evening"
+    ],
+    "requested_geography": [],
+    "city_resolved_to": null
+  },
+  "filters_applied": {
+    "exclusions": [],
+    "location_type": null,
+    "candidates_scored": 66978
+  },
+  "package_totals": {
+    "n_screen_timeblock_pairs": 24,
+    "n_unique_screens": 24,
+    "n_clusters_represented": 24,
+    "total_cost": 21855.6,
+    "budget": 22000.0,
+    "budget_utilization_pct": 99.3,
+    "duration_days": 20,
+    "cost_basis": "total_campaign",
+    "total_projected_impressions_per_day": 840342.0,
+    "total_projected_impressions_per_week": 5882396.0,
+    "avg_relevance_score_selected": 0.715
+  },
+  "caveats": [],
+  "recommended_screens": [
+    {
+      "rank": 14736,
+      "screen_id": "LH-SCR-004536",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "LH-LOC-0084",
+        "name": "Uptown Crescent Terminal",
+        "location_type": "metro_station",
+        "city_id": "LH",
+        "city_name": "Las Hackland",
+        "market_tier": "premium",
+        "zone_id": "LH-ZONE-004",
+        "zone_name": "Uptown Crescent"
+      },
+      "route": {
+        "primary_corridor_id": "LH-RT-M003",
+        "route_names": [
+          "Red Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~92,443 riders in this block; nearby draws: university, entertainment district; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "value-income",
+          "student",
+          "high-footfall",
+          "university",
+          "network-hub"
+        ],
+        "riders_in_block": 92443.9,
+        "daily_riders_exposed": 92444.0,
+        "commuter_score": 0.522,
+        "income_index": 86.7,
+        "median_age": 28.1,
+        "dominant_occupation": "student",
+        "top_nearby_poi_types": [
+          "university",
+          "entertainment_district",
+          "shopping_mall"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 54.12,
+        "price_target_per_slot_per_day": 54.69,
+        "price_cap_per_slot_per_day": 97.42,
+        "cost_per_day": 54.69,
+        "cost_for_campaign": 1093.8,
+        "campaign_days": 20,
+        "demand_score": 0.0174,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 47286.0,
+        "marginal_daily_after_overlap": 47286.0,
+        "overlap_discount_applied": 0.0,
+        "marginal_weekly": 331002.0,
+        "marginal_for_campaign": 945720.0
+      },
+      "why_selected": {
+        "relevance_score": 0.6367,
+        "reason": "85% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::LH-LOC-0084",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 13424,
+      "screen_id": "LH-SCR-003202",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "LH-LOC-0004",
+        "name": "Uptown Crescent Terminal",
+        "location_type": "metro_station",
+        "city_id": "LH",
+        "city_name": "Las Hackland",
+        "market_tier": "premium",
+        "zone_id": "LH-ZONE-004",
+        "zone_name": "Uptown Crescent"
+      },
+      "route": {
+        "primary_corridor_id": "LH-RT-M001",
+        "route_names": [
+          "Blue Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~97,119 riders in this block; nearby draws: entertainment district, university; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "value-income",
+          "student",
+          "high-footfall",
+          "entertainment_district",
+          "network-hub"
+        ],
+        "riders_in_block": 97119.8,
+        "daily_riders_exposed": 97120.0,
+        "commuter_score": 0.523,
+        "income_index": 86.7,
+        "median_age": 28.1,
+        "dominant_occupation": "student",
+        "top_nearby_poi_types": [
+          "entertainment_district",
+          "university",
+          "residential_tower"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 54.93,
+        "price_target_per_slot_per_day": 56.33,
+        "price_cap_per_slot_per_day": 98.87,
+        "cost_per_day": 56.33,
+        "cost_for_campaign": 1126.6,
+        "campaign_days": 20,
+        "demand_score": 0.0426,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 49678.0,
+        "marginal_daily_after_overlap": 46367.0,
+        "overlap_discount_applied": 3311.0,
+        "marginal_weekly": 324567.0,
+        "marginal_for_campaign": 927335.0
+      },
+      "why_selected": {
+        "relevance_score": 0.6524,
+        "reason": "85% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::LH-LOC-0004",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 25085,
+      "screen_id": "LH-SCR-002699",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "LH-LOC-0034",
+        "name": "Uptown Crescent Interchange",
+        "location_type": "metro_station",
+        "city_id": "LH",
+        "city_name": "Las Hackland",
+        "market_tier": "premium",
+        "zone_id": "LH-ZONE-004",
+        "zone_name": "Uptown Crescent"
+      },
+      "route": {
+        "primary_corridor_id": "LH-RT-M003",
+        "route_names": [
+          "Red Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 3,
+        "hours": "08:00-12:00",
+        "daypart": "midday",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~89,903 riders in this block; nearby draws: university, grocery anchor; network hub adjacency.",
+        "tags": [
+          "midday",
+          "fixed",
+          "value-income",
+          "student",
+          "high-footfall",
+          "university",
+          "network-hub"
+        ],
+        "riders_in_block": 89903.7,
+        "daily_riders_exposed": 89904.0,
+        "commuter_score": 0.522,
+        "income_index": 86.7,
+        "median_age": 28.1,
+        "dominant_occupation": "student",
+        "top_nearby_poi_types": [
+          "university",
+          "grocery_anchor",
+          "shopping_mall"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 41.73,
+        "price_target_per_slot_per_day": 44.14,
+        "price_cap_per_slot_per_day": 75.11,
+        "cost_per_day": 44.14,
+        "cost_for_campaign": 882.8,
+        "campaign_days": 20,
+        "demand_score": 0.0964,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 45987.0,
+        "marginal_daily_after_overlap": 45987.0,
+        "overlap_discount_applied": 0.0,
+        "marginal_weekly": 321907.0,
+        "marginal_for_campaign": 919733.0
+      },
+      "why_selected": {
+        "relevance_score": 0.5685,
+        "reason": "85% of local population in target age range (18_34, 35_54); commuter index 0.52; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::LH-LOC-0034",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 1556,
+      "screen_id": "LH-SCR-003019",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "LH-LOC-0062",
+        "name": "Harborfront Terminal",
+        "location_type": "metro_station",
+        "city_id": "LH",
+        "city_name": "Las Hackland",
+        "market_tier": "premium",
+        "zone_id": "LH-ZONE-002",
+        "zone_name": "Harborfront"
+      },
+      "route": {
+        "primary_corridor_id": "LH-RT-M001",
+        "route_names": [
+          "Blue Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Harborfront; mid-income area (mixed skew); ~94,994 riders in this block; nearby draws: entertainment district, shopping mall; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "mid-income",
+          "mixed",
+          "high-footfall",
+          "entertainment_district",
+          "network-hub"
+        ],
+        "riders_in_block": 94994.5,
+        "daily_riders_exposed": 94994.0,
+        "commuter_score": 0.523,
+        "income_index": 104.7,
+        "median_age": 44.7,
+        "dominant_occupation": "mixed",
+        "top_nearby_poi_types": [
+          "entertainment_district",
+          "shopping_mall",
+          "grocery_anchor"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 66.26,
+        "price_target_per_slot_per_day": 67.52,
+        "price_cap_per_slot_per_day": 119.27,
+        "cost_per_day": 67.52,
+        "cost_for_campaign": 1350.4,
+        "campaign_days": 20,
+        "demand_score": 0.0318,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 48591.0,
+        "marginal_daily_after_overlap": 45352.0,
+        "overlap_discount_applied": 3239.0,
+        "marginal_weekly": 317465.0,
+        "marginal_for_campaign": 907042.0
+      },
+      "why_selected": {
+        "relevance_score": 0.8081,
+        "reason": "57% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::LH-LOC-0062",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 13602,
+      "screen_id": "LH-SCR-002359",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "LH-LOC-0028",
+        "name": "North Terminus Interchange",
+        "location_type": "metro_station",
+        "city_id": "LH",
+        "city_name": "Las Hackland",
+        "market_tier": "premium",
+        "zone_id": "LH-ZONE-008",
+        "zone_name": "North Terminus"
+      },
+      "route": {
+        "primary_corridor_id": "LH-RT-M009",
+        "route_names": [
+          "Copper Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving North Terminus; value-income area (mixed skew); ~93,262 riders in this block; nearby draws: tourist landmark, entertainment district; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "value-income",
+          "mixed",
+          "high-footfall",
+          "tourist_landmark",
+          "network-hub"
+        ],
+        "riders_in_block": 93262.9,
+        "daily_riders_exposed": 93263.0,
+        "commuter_score": 0.511,
+        "income_index": 88.5,
+        "median_age": 47.1,
+        "dominant_occupation": "mixed",
+        "top_nearby_poi_types": [
+          "tourist_landmark",
+          "entertainment_district",
+          "shopping_mall"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 52.17,
+        "price_target_per_slot_per_day": 53.65,
+        "price_cap_per_slot_per_day": 93.91,
+        "cost_per_day": 53.65,
+        "cost_for_campaign": 1073.0,
+        "campaign_days": 20,
+        "demand_score": 0.0474,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 47705.0,
+        "marginal_daily_after_overlap": 43495.0,
+        "overlap_discount_applied": 4210.0,
+        "marginal_weekly": 304465.0,
+        "marginal_for_campaign": 869899.0
+      },
+      "why_selected": {
+        "relevance_score": 0.6485,
+        "reason": "48% of local population in target age range (18_34, 35_54); commuter index 0.51; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::LH-LOC-0028",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 3838,
+      "screen_id": "LH-SCR-002471",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "L"
+      },
+      "location": {
+        "location_id": "LH-LOC-0089",
+        "name": "Market Quarter Interchange",
+        "location_type": "metro_station",
+        "city_id": "LH",
+        "city_name": "Las Hackland",
+        "market_tier": "premium",
+        "zone_id": "LH-ZONE-009",
+        "zone_name": "Market Quarter"
+      },
+      "route": {
+        "primary_corridor_id": "LH-RT-M004",
+        "route_names": [
+          "Yellow Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Market Quarter; mid-income area (retail_service skew); ~83,763 riders in this block; nearby draws: grocery anchor, shopping mall; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "mid-income",
+          "retail_service",
+          "high-footfall",
+          "grocery_anchor",
+          "network-hub"
+        ],
+        "riders_in_block": 83763.1,
+        "daily_riders_exposed": 83763.0,
+        "commuter_score": 0.527,
+        "income_index": 94.0,
+        "median_age": 34.7,
+        "dominant_occupation": "retail_service",
+        "top_nearby_poi_types": [
+          "grocery_anchor",
+          "shopping_mall",
+          "entertainment_district"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 62.2,
+        "price_target_per_slot_per_day": 62.22,
+        "price_cap_per_slot_per_day": 111.96,
+        "cost_per_day": 62.22,
+        "cost_for_campaign": 1244.4,
+        "campaign_days": 20,
+        "demand_score": 0.0006,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 42846.0,
+        "marginal_daily_after_overlap": 42846.0,
+        "overlap_discount_applied": 0.0,
+        "marginal_weekly": 299920.0,
+        "marginal_for_campaign": 856914.0
+      },
+      "why_selected": {
+        "relevance_score": 0.7908,
+        "reason": "63% of local population in target age range (18_34, 35_54); commuter index 0.53; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::LH-LOC-0089",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 28594,
+      "screen_id": "LH-SCR-002837",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "LH-LOC-0024",
+        "name": "Uptown Crescent Interchange",
+        "location_type": "metro_station",
+        "city_id": "LH",
+        "city_name": "Las Hackland",
+        "market_tier": "premium",
+        "zone_id": "LH-ZONE-004",
+        "zone_name": "Uptown Crescent"
+      },
+      "route": {
+        "primary_corridor_id": "LH-RT-M006",
+        "route_names": [
+          "Violet Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 3,
+        "hours": "08:00-12:00",
+        "daypart": "midday",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~87,002 riders in this block; nearby draws: grocery anchor, university; network hub adjacency.",
+        "tags": [
+          "midday",
+          "fixed",
+          "value-income",
+          "student",
+          "high-footfall",
+          "grocery_anchor",
+          "network-hub"
+        ],
+        "riders_in_block": 87002.7,
+        "daily_riders_exposed": 87003.0,
+        "commuter_score": 0.519,
+        "income_index": 86.7,
+        "median_age": 28.1,
+        "dominant_occupation": "student",
+        "top_nearby_poi_types": [
+          "grocery_anchor",
+          "university",
+          "entertainment_district"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 44.51,
+        "price_target_per_slot_per_day": 45.08,
+        "price_cap_per_slot_per_day": 80.12,
+        "cost_per_day": 45.08,
+        "cost_for_campaign": 901.6,
+        "campaign_days": 20,
+        "demand_score": 0.0212,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 44503.0,
+        "marginal_daily_after_overlap": 42349.0,
+        "overlap_discount_applied": 2154.0,
+        "marginal_weekly": 296442.0,
+        "marginal_for_campaign": 846977.0
+      },
+      "why_selected": {
+        "relevance_score": 0.5534,
+        "reason": "85% of local population in target age range (18_34, 35_54); commuter index 0.52; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::LH-LOC-0024",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 10992,
+      "screen_id": "LH-SCR-002619",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "LH-LOC-0073",
+        "name": "Old Mill District Central",
+        "location_type": "metro_station",
+        "city_id": "LH",
+        "city_name": "Las Hackland",
+        "market_tier": "premium",
+        "zone_id": "LH-ZONE-003",
+        "zone_name": "Old Mill District"
+      },
+      "route": {
+        "primary_corridor_id": "LH-RT-M002",
+        "route_names": [
+          "Green Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Old Mill District; value-income area (blue_collar skew); ~89,562 riders in this block; nearby draws: grocery anchor, hospital; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "value-income",
+          "blue_collar",
+          "high-footfall",
+          "grocery_anchor",
+          "network-hub"
+        ],
+        "riders_in_block": 89562.7,
+        "daily_riders_exposed": 89563.0,
+        "commuter_score": 0.522,
+        "income_index": 84.8,
+        "median_age": 43.3,
+        "dominant_occupation": "blue_collar",
+        "top_nearby_poi_types": [
+          "grocery_anchor",
+          "hospital",
+          "shopping_mall"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 54.86,
+        "price_target_per_slot_per_day": 56.59,
+        "price_cap_per_slot_per_day": 98.75,
+        "cost_per_day": 56.59,
+        "cost_for_campaign": 1131.8,
+        "campaign_days": 20,
+        "demand_score": 0.0525,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 45812.0,
+        "marginal_daily_after_overlap": 41769.0,
+        "overlap_discount_applied": 4043.0,
+        "marginal_weekly": 292385.0,
+        "marginal_for_campaign": 835386.0
+      },
+      "why_selected": {
+        "relevance_score": 0.6887,
+        "reason": "53% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::LH-LOC-0073",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 1,
+      "screen_id": "DAT-SCR-001780",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "M"
+      },
+      "location": {
+        "location_id": "DAT-LOC-0059",
+        "name": "Founders Square Central",
+        "location_type": "metro_station",
+        "city_id": "DAT",
+        "city_name": "DA Town",
+        "market_tier": "standard",
+        "zone_id": "DAT-ZONE-009",
+        "zone_name": "Founders Square"
+      },
+      "route": {
+        "primary_corridor_id": "DAT-RT-M002",
+        "route_names": [
+          "Green Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Founders Square; value-income area (retail_service skew); ~72,174 riders in this block; nearby draws: shopping mall, grocery anchor; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "value-income",
+          "retail_service",
+          "high-footfall",
+          "shopping_mall",
+          "network-hub"
+        ],
+        "riders_in_block": 72174.8,
+        "daily_riders_exposed": 72175.0,
+        "commuter_score": 0.54,
+        "income_index": 85.7,
+        "median_age": 40.3,
+        "dominant_occupation": "retail_service",
+        "top_nearby_poi_types": [
+          "shopping_mall",
+          "grocery_anchor",
+          "entertainment_district"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 47.42,
+        "price_target_per_slot_per_day": 47.51,
+        "price_cap_per_slot_per_day": 85.36,
+        "cost_per_day": 47.51,
+        "cost_for_campaign": 950.2,
+        "campaign_days": 20,
+        "demand_score": 0.003,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 36918.0,
+        "marginal_daily_after_overlap": 36918.0,
+        "overlap_discount_applied": 0.0,
+        "marginal_weekly": 258427.0,
+        "marginal_for_campaign": 738363.0
+      },
+      "why_selected": {
+        "relevance_score": 0.922,
+        "reason": "64% of local population in target age range (18_34, 35_54); commuter index 0.54; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::DAT-LOC-0059",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 4549,
+      "screen_id": "DAT-SCR-002364",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "DAT-LOC-0043",
+        "name": "Union Flats Central",
+        "location_type": "metro_station",
+        "city_id": "DAT",
+        "city_name": "DA Town",
+        "market_tier": "standard",
+        "zone_id": "DAT-ZONE-003",
+        "zone_name": "Union Flats"
+      },
+      "route": {
+        "primary_corridor_id": "DAT-RT-M002",
+        "route_names": [
+          "Green Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Union Flats; mid-income area (mixed skew); ~76,265 riders in this block; nearby draws: grocery anchor, shopping mall; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "mid-income",
+          "mixed",
+          "high-footfall",
+          "grocery_anchor",
+          "network-hub"
+        ],
+        "riders_in_block": 76265.1,
+        "daily_riders_exposed": 76265.0,
+        "commuter_score": 0.54,
+        "income_index": 112.2,
+        "median_age": 38.8,
+        "dominant_occupation": "mixed",
+        "top_nearby_poi_types": [
+          "grocery_anchor",
+          "shopping_mall",
+          "tourist_landmark"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 55.28,
+        "price_target_per_slot_per_day": 56.17,
+        "price_cap_per_slot_per_day": 99.5,
+        "cost_per_day": 56.17,
+        "cost_for_campaign": 1123.4,
+        "campaign_days": 20,
+        "demand_score": 0.0269,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 39010.0,
+        "marginal_daily_after_overlap": 36843.0,
+        "overlap_discount_applied": 2167.0,
+        "marginal_weekly": 257903.0,
+        "marginal_for_campaign": 736867.0
+      },
+      "why_selected": {
+        "relevance_score": 0.7765,
+        "reason": "68% of local population in target age range (18_34, 35_54); commuter index 0.54; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::DAT-LOC-0043",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 13134,
+      "screen_id": "DAT-SCR-002819",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "DAT-LOC-0004",
+        "name": "Bellwood Terminal",
+        "location_type": "metro_station",
+        "city_id": "DAT",
+        "city_name": "DA Town",
+        "market_tier": "standard",
+        "zone_id": "DAT-ZONE-004",
+        "zone_name": "Bellwood"
+      },
+      "route": {
+        "primary_corridor_id": "DAT-RT-M004",
+        "route_names": [
+          "Yellow Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 3,
+        "hours": "08:00-12:00",
+        "daypart": "midday",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Midday block, roadside/platform panel; serving Bellwood; value-income area (student skew); ~74,043 riders in this block; nearby draws: grocery anchor, shopping mall; network hub adjacency.",
+        "tags": [
+          "midday",
+          "fixed",
+          "value-income",
+          "student",
+          "high-footfall",
+          "grocery_anchor",
+          "network-hub"
+        ],
+        "riders_in_block": 74043.5,
+        "daily_riders_exposed": 74044.0,
+        "commuter_score": 0.516,
+        "income_index": 78.4,
+        "median_age": 23.9,
+        "dominant_occupation": "student",
+        "top_nearby_poi_types": [
+          "grocery_anchor",
+          "shopping_mall",
+          "university"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 33.97,
+        "price_target_per_slot_per_day": 35.82,
+        "price_cap_per_slot_per_day": 52.53,
+        "cost_per_day": 35.82,
+        "cost_for_campaign": 716.4,
+        "campaign_days": 20,
+        "demand_score": 0.0909,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 37874.0,
+        "marginal_daily_after_overlap": 36071.0,
+        "overlap_discount_applied": 1803.0,
+        "marginal_weekly": 252498.0,
+        "marginal_for_campaign": 721424.0
+      },
+      "why_selected": {
+        "relevance_score": 0.6583,
+        "reason": "82% of local population in target age range (18_34, 35_54); commuter index 0.52; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::DAT-LOC-0004",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 17456,
+      "screen_id": "DAT-SCR-002219",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "L"
+      },
+      "location": {
+        "location_id": "DAT-LOC-0034",
+        "name": "Bellwood Central",
+        "location_type": "metro_station",
+        "city_id": "DAT",
+        "city_name": "DA Town",
+        "market_tier": "standard",
+        "zone_id": "DAT-ZONE-004",
+        "zone_name": "Bellwood"
+      },
+      "route": {
+        "primary_corridor_id": "DAT-RT-M001",
+        "route_names": [
+          "Blue Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Bellwood; value-income area (student skew); ~76,527 riders in this block; nearby draws: residential tower, grocery anchor; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "value-income",
+          "student",
+          "high-footfall",
+          "residential_tower",
+          "network-hub"
+        ],
+        "riders_in_block": 76527.6,
+        "daily_riders_exposed": 76528.0,
+        "commuter_score": 0.516,
+        "income_index": 78.4,
+        "median_age": 23.9,
+        "dominant_occupation": "student",
+        "top_nearby_poi_types": [
+          "residential_tower",
+          "grocery_anchor",
+          "entertainment_district"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 40.45,
+        "price_target_per_slot_per_day": 41.97,
+        "price_cap_per_slot_per_day": 72.81,
+        "cost_per_day": 41.97,
+        "cost_for_campaign": 839.4,
+        "campaign_days": 20,
+        "demand_score": 0.0627,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 39145.0,
+        "marginal_daily_after_overlap": 35381.0,
+        "overlap_discount_applied": 3764.0,
+        "marginal_weekly": 247666.0,
+        "marginal_for_campaign": 707618.0
+      },
+      "why_selected": {
+        "relevance_score": 0.6148,
+        "reason": "82% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); no nearby POIs match requested type(s): shopping_mall",
+        "audience_cluster": "LOC::DAT-LOC-0034",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 34,
+      "screen_id": "DAT-SCR-001649",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "DAT-LOC-0033",
+        "name": "Union Flats Interchange",
+        "location_type": "metro_station",
+        "city_id": "DAT",
+        "city_name": "DA Town",
+        "market_tier": "standard",
+        "zone_id": "DAT-ZONE-003",
+        "zone_name": "Union Flats"
+      },
+      "route": {
+        "primary_corridor_id": "DAT-RT-M003",
+        "route_names": [
+          "Red Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Union Flats; mid-income area (mixed skew); ~71,924 riders in this block; nearby draws: shopping mall, residential tower; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "mid-income",
+          "mixed",
+          "high-footfall",
+          "shopping_mall",
+          "network-hub"
+        ],
+        "riders_in_block": 71924.0,
+        "daily_riders_exposed": 71924.0,
+        "commuter_score": 0.536,
+        "income_index": 112.2,
+        "median_age": 38.8,
+        "dominant_occupation": "mixed",
+        "top_nearby_poi_types": [
+          "shopping_mall",
+          "residential_tower",
+          "grocery_anchor"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 55.68,
+        "price_target_per_slot_per_day": 58.48,
+        "price_cap_per_slot_per_day": 100.22,
+        "cost_per_day": 58.48,
+        "cost_for_campaign": 1169.6,
+        "campaign_days": 20,
+        "demand_score": 0.0837,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 36790.0,
+        "marginal_daily_after_overlap": 34746.0,
+        "overlap_discount_applied": 2044.0,
+        "marginal_weekly": 243223.0,
+        "marginal_for_campaign": 694924.0
+      },
+      "why_selected": {
+        "relevance_score": 0.9208,
+        "reason": "68% of local population in target age range (18_34, 35_54); commuter index 0.54; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::DAT-LOC-0033",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 11716,
+      "screen_id": "DAT-SCR-002184",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "DAT-LOC-0006",
+        "name": "Milltown Interchange",
+        "location_type": "metro_station",
+        "city_id": "DAT",
+        "city_name": "DA Town",
+        "market_tier": "standard",
+        "zone_id": "DAT-ZONE-006",
+        "zone_name": "Milltown"
+      },
+      "route": {
+        "primary_corridor_id": "DAT-RT-M005",
+        "route_names": [
+          "Silver Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Milltown; value-income area (blue_collar skew); ~71,612 riders in this block; nearby draws: government building, shopping mall; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "value-income",
+          "blue_collar",
+          "high-footfall",
+          "government_building",
+          "network-hub"
+        ],
+        "riders_in_block": 71612.5,
+        "daily_riders_exposed": 71612.0,
+        "commuter_score": 0.522,
+        "income_index": 83.8,
+        "median_age": 41.7,
+        "dominant_occupation": "blue_collar",
+        "top_nearby_poi_types": [
+          "government_building",
+          "shopping_mall",
+          "hospital"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 42.06,
+        "price_target_per_slot_per_day": 42.96,
+        "price_cap_per_slot_per_day": 75.71,
+        "cost_per_day": 42.96,
+        "cost_for_campaign": 859.2,
+        "campaign_days": 20,
+        "demand_score": 0.0358,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 36631.0,
+        "marginal_daily_after_overlap": 34105.0,
+        "overlap_discount_applied": 2526.0,
+        "marginal_weekly": 238734.0,
+        "marginal_for_campaign": 682097.0
+      },
+      "why_selected": {
+        "relevance_score": 0.6775,
+        "reason": "52% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::DAT-LOC-0006",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 42273,
+      "screen_id": "DAT-SCR-001704",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "DAT-LOC-0044",
+        "name": "Bellwood Interchange",
+        "location_type": "metro_station",
+        "city_id": "DAT",
+        "city_name": "DA Town",
+        "market_tier": "standard",
+        "zone_id": "DAT-ZONE-004",
+        "zone_name": "Bellwood"
+      },
+      "route": {
+        "primary_corridor_id": "DAT-RT-M001",
+        "route_names": [
+          "Blue Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 3,
+        "hours": "08:00-12:00",
+        "daypart": "midday",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Midday block, roadside/platform panel; serving Bellwood; value-income area (student skew); ~73,317 riders in this block; nearby draws: university, residential tower; network hub adjacency.",
+        "tags": [
+          "midday",
+          "fixed",
+          "value-income",
+          "student",
+          "high-footfall",
+          "university",
+          "network-hub"
+        ],
+        "riders_in_block": 73317.4,
+        "daily_riders_exposed": 73317.0,
+        "commuter_score": 0.516,
+        "income_index": 78.4,
+        "median_age": 23.9,
+        "dominant_occupation": "student",
+        "top_nearby_poi_types": [
+          "university",
+          "residential_tower",
+          "grocery_anchor"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 32.84,
+        "price_target_per_slot_per_day": 33.59,
+        "price_cap_per_slot_per_day": 59.11,
+        "cost_per_day": 33.59,
+        "cost_for_campaign": 671.8,
+        "campaign_days": 20,
+        "demand_score": 0.0382,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 37503.0,
+        "marginal_daily_after_overlap": 33897.0,
+        "overlap_discount_applied": 3606.0,
+        "marginal_weekly": 237277.0,
+        "marginal_for_campaign": 677934.0
+      },
+      "why_selected": {
+        "relevance_score": 0.4948,
+        "reason": "82% of local population in target age range (18_34, 35_54); commuter index 0.52; outside requested daypart(s) (evening); no nearby POIs match requested type(s): shopping_mall",
+        "audience_cluster": "LOC::DAT-LOC-0044",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 243,
+      "screen_id": "LH-SCR-004712",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "LH-LOC-0047",
+        "name": "Riverside Junction Interchange",
+        "location_type": "metro_station",
+        "city_id": "LH",
+        "city_name": "Las Hackland",
+        "market_tier": "premium",
+        "zone_id": "LH-ZONE-007",
+        "zone_name": "Riverside Junction"
+      },
+      "route": {
+        "primary_corridor_id": "LH-RT-M005",
+        "route_names": [
+          "Silver Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Riverside Junction; mid-income area (mixed skew); ~64,315 riders in this block; nearby draws: shopping mall, residential tower; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "mid-income",
+          "mixed",
+          "high-footfall",
+          "shopping_mall",
+          "network-hub"
+        ],
+        "riders_in_block": 64315.7,
+        "daily_riders_exposed": 64316.0,
+        "commuter_score": 0.522,
+        "income_index": 95.5,
+        "median_age": 34.3,
+        "dominant_occupation": "mixed",
+        "top_nearby_poi_types": [
+          "shopping_mall",
+          "residential_tower",
+          "government_building"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 56.19,
+        "price_target_per_slot_per_day": 56.72,
+        "price_cap_per_slot_per_day": 101.14,
+        "cost_per_day": 56.72,
+        "cost_for_campaign": 1134.4,
+        "campaign_days": 20,
+        "demand_score": 0.0158,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 32898.0,
+        "marginal_daily_after_overlap": 31071.0,
+        "overlap_discount_applied": 1827.0,
+        "marginal_weekly": 217494.0,
+        "marginal_for_campaign": 621413.0
+      },
+      "why_selected": {
+        "relevance_score": 0.9166,
+        "reason": "70% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::LH-LOC-0047",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 6033,
+      "screen_id": "DAT-SCR-003116",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "DAT-LOC-0027",
+        "name": "Kestrel Heights Central",
+        "location_type": "metro_station",
+        "city_id": "DAT",
+        "city_name": "DA Town",
+        "market_tier": "standard",
+        "zone_id": "DAT-ZONE-007",
+        "zone_name": "Kestrel Heights"
+      },
+      "route": {
+        "primary_corridor_id": "DAT-RT-M003",
+        "route_names": [
+          "Red Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 3,
+        "hours": "08:00-12:00",
+        "daypart": "midday",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Midday block, roadside/platform panel; serving Kestrel Heights; mid-income area (mixed skew); ~59,720 riders in this block; nearby draws: shopping mall, residential tower; network hub adjacency.",
+        "tags": [
+          "midday",
+          "fixed",
+          "mid-income",
+          "mixed",
+          "high-footfall",
+          "shopping_mall",
+          "network-hub"
+        ],
+        "riders_in_block": 59720.0,
+        "daily_riders_exposed": 59720.0,
+        "commuter_score": 0.536,
+        "income_index": 100.7,
+        "median_age": 40.0,
+        "dominant_occupation": "mixed",
+        "top_nearby_poi_types": [
+          "shopping_mall",
+          "residential_tower",
+          "hospital"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 39.0,
+        "price_target_per_slot_per_day": 39.66,
+        "price_cap_per_slot_per_day": 70.2,
+        "cost_per_day": 39.66,
+        "cost_for_campaign": 793.2,
+        "campaign_days": 20,
+        "demand_score": 0.0283,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 30547.0,
+        "marginal_daily_after_overlap": 28850.0,
+        "overlap_discount_applied": 1697.0,
+        "marginal_weekly": 201953.0,
+        "marginal_for_campaign": 577010.0
+      },
+      "why_selected": {
+        "relevance_score": 0.7524,
+        "reason": "53% of local population in target age range (18_34, 35_54); commuter index 0.54; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::DAT-LOC-0027",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 11773,
+      "screen_id": "ACS-SCR-001662",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "ACS-LOC-0024",
+        "name": "Fallowfield Central",
+        "location_type": "metro_station",
+        "city_id": "ACS",
+        "city_name": "Accordionshire",
+        "market_tier": "value",
+        "zone_id": "ACS-ZONE-004",
+        "zone_name": "Fallowfield"
+      },
+      "route": {
+        "primary_corridor_id": "ACS-RT-M001",
+        "route_names": [
+          "Blue Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Fallowfield; value-income area (student skew); ~55,495 riders in this block; nearby draws: residential tower, entertainment district; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "value-income",
+          "student",
+          "high-footfall",
+          "residential_tower",
+          "network-hub"
+        ],
+        "riders_in_block": 55495.2,
+        "daily_riders_exposed": 55495.0,
+        "commuter_score": 0.515,
+        "income_index": 73.5,
+        "median_age": 28.0,
+        "dominant_occupation": "student",
+        "top_nearby_poi_types": [
+          "residential_tower",
+          "entertainment_district",
+          "grocery_anchor"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 27.88,
+        "price_target_per_slot_per_day": 27.95,
+        "price_cap_per_slot_per_day": 43.6,
+        "cost_per_day": 27.95,
+        "cost_for_campaign": 559.0,
+        "campaign_days": 20,
+        "demand_score": 0.0042,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 28386.0,
+        "marginal_daily_after_overlap": 28386.0,
+        "overlap_discount_applied": 0.0,
+        "marginal_weekly": 198705.0,
+        "marginal_for_campaign": 567727.0
+      },
+      "why_selected": {
+        "relevance_score": 0.6769,
+        "reason": "85% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::ACS-LOC-0024",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 32136,
+      "screen_id": "ACS-SCR-001492",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "ACS-LOC-0004",
+        "name": "Fallowfield Interchange",
+        "location_type": "metro_station",
+        "city_id": "ACS",
+        "city_name": "Accordionshire",
+        "market_tier": "value",
+        "zone_id": "ACS-ZONE-004",
+        "zone_name": "Fallowfield"
+      },
+      "route": {
+        "primary_corridor_id": "ACS-RT-M003",
+        "route_names": [
+          "Red Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 3,
+        "hours": "08:00-12:00",
+        "daypart": "midday",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Midday block, roadside/platform panel; serving Fallowfield; value-income area (student skew); ~52,588 riders in this block; nearby draws: grocery anchor, stadium arena; network hub adjacency.",
+        "tags": [
+          "midday",
+          "fixed",
+          "value-income",
+          "student",
+          "high-footfall",
+          "grocery_anchor",
+          "network-hub"
+        ],
+        "riders_in_block": 52588.8,
+        "daily_riders_exposed": 52589.0,
+        "commuter_score": 0.514,
+        "income_index": 73.5,
+        "median_age": 28.0,
+        "dominant_occupation": "student",
+        "top_nearby_poi_types": [
+          "grocery_anchor",
+          "stadium_arena",
+          "shopping_mall"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 24.97,
+        "price_target_per_slot_per_day": 26.93,
+        "price_cap_per_slot_per_day": 44.95,
+        "cost_per_day": 26.93,
+        "cost_for_campaign": 538.6,
+        "campaign_days": 20,
+        "demand_score": 0.131,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 26900.0,
+        "marginal_daily_after_overlap": 26900.0,
+        "overlap_discount_applied": 0.0,
+        "marginal_weekly": 188298.0,
+        "marginal_for_campaign": 537994.0
+      },
+      "why_selected": {
+        "relevance_score": 0.5334,
+        "reason": "85% of local population in target age range (18_34, 35_54); commuter index 0.51; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::ACS-LOC-0004",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 7418,
+      "screen_id": "DAT-SCR-002975",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "DAT-LOC-0020",
+        "name": "Northbank Central",
+        "location_type": "metro_station",
+        "city_id": "DAT",
+        "city_name": "DA Town",
+        "market_tier": "standard",
+        "zone_id": "DAT-ZONE-010",
+        "zone_name": "Northbank"
+      },
+      "route": {
+        "primary_corridor_id": "DAT-RT-M006",
+        "route_names": [
+          "Violet Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 3,
+        "hours": "08:00-12:00",
+        "daypart": "midday",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Midday block, roadside/platform panel; serving Northbank; value-income area (mixed skew); ~52,769 riders in this block; nearby draws: shopping mall, tourist landmark; network hub adjacency.",
+        "tags": [
+          "midday",
+          "fixed",
+          "value-income",
+          "mixed",
+          "high-footfall",
+          "shopping_mall",
+          "network-hub"
+        ],
+        "riders_in_block": 52769.2,
+        "daily_riders_exposed": 52769.0,
+        "commuter_score": 0.514,
+        "income_index": 76.6,
+        "median_age": 40.8,
+        "dominant_occupation": "mixed",
+        "top_nearby_poi_types": [
+          "shopping_mall",
+          "tourist_landmark",
+          "university"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 29.09,
+        "price_target_per_slot_per_day": 31.43,
+        "price_cap_per_slot_per_day": 52.36,
+        "cost_per_day": 31.43,
+        "cost_for_campaign": 628.6,
+        "campaign_days": 20,
+        "demand_score": 0.134,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 26992.0,
+        "marginal_daily_after_overlap": 25063.0,
+        "overlap_discount_applied": 1929.0,
+        "marginal_weekly": 175444.0,
+        "marginal_for_campaign": 501268.0
+      },
+      "why_selected": {
+        "relevance_score": 0.7382,
+        "reason": "52% of local population in target age range (18_34, 35_54); commuter index 0.51; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::DAT-LOC-0020",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 37664,
+      "screen_id": "ACS-SCR-001276",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "M"
+      },
+      "location": {
+        "location_id": "ACS-LOC-0002",
+        "name": "Windmere Park Central",
+        "location_type": "metro_station",
+        "city_id": "ACS",
+        "city_name": "Accordionshire",
+        "market_tier": "value",
+        "zone_id": "ACS-ZONE-002",
+        "zone_name": "Windmere Park"
+      },
+      "route": {
+        "primary_corridor_id": "ACS-RT-M002",
+        "route_names": [
+          "Green Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 3,
+        "hours": "08:00-12:00",
+        "daypart": "midday",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Midday block, roadside/platform panel; serving Windmere Park; value-income area (blue_collar skew); ~56,570 riders in this block; nearby draws: grocery anchor, residential tower; network hub adjacency.",
+        "tags": [
+          "midday",
+          "fixed",
+          "value-income",
+          "blue_collar",
+          "high-footfall",
+          "grocery_anchor",
+          "network-hub"
+        ],
+        "riders_in_block": 56570.8,
+        "daily_riders_exposed": 56571.0,
+        "commuter_score": 0.514,
+        "income_index": 76.0,
+        "median_age": 43.1,
+        "dominant_occupation": "blue_collar",
+        "top_nearby_poi_types": [
+          "grocery_anchor",
+          "residential_tower",
+          "entertainment_district"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 23.15,
+        "price_target_per_slot_per_day": 23.17,
+        "price_cap_per_slot_per_day": 41.67,
+        "cost_per_day": 23.17,
+        "cost_for_campaign": 463.4,
+        "campaign_days": 20,
+        "demand_score": 0.0011,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 28937.0,
+        "marginal_daily_after_overlap": 24485.0,
+        "overlap_discount_applied": 4452.0,
+        "marginal_weekly": 171393.0,
+        "marginal_for_campaign": 489693.0
+      },
+      "why_selected": {
+        "relevance_score": 0.5004,
+        "reason": "56% of local population in target age range (18_34, 35_54); commuter index 0.51; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::ACS-LOC-0002",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 569,
+      "screen_id": "DAT-SCR-002131",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "DAT-LOC-0012",
+        "name": "Ashford Row Interchange",
+        "location_type": "metro_station",
+        "city_id": "DAT",
+        "city_name": "DA Town",
+        "market_tier": "standard",
+        "zone_id": "DAT-ZONE-002",
+        "zone_name": "Ashford Row"
+      },
+      "route": {
+        "primary_corridor_id": "DAT-RT-M002",
+        "route_names": [
+          "Green Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Ashford Row; mid-income area (mixed skew); ~50,439 riders in this block; nearby draws: shopping mall, office park; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "mid-income",
+          "mixed",
+          "high-footfall",
+          "shopping_mall",
+          "network-hub"
+        ],
+        "riders_in_block": 50439.0,
+        "daily_riders_exposed": 50439.0,
+        "commuter_score": 0.54,
+        "income_index": 93.8,
+        "median_age": 43.6,
+        "dominant_occupation": "mixed",
+        "top_nearby_poi_types": [
+          "shopping_mall",
+          "office_park",
+          "residential_tower"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 44.82,
+        "price_target_per_slot_per_day": 45.37,
+        "price_cap_per_slot_per_day": 80.68,
+        "cost_per_day": 45.37,
+        "cost_for_campaign": 907.4,
+        "campaign_days": 20,
+        "demand_score": 0.0203,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 25800.0,
+        "marginal_daily_after_overlap": 24367.0,
+        "overlap_discount_applied": 1433.0,
+        "marginal_weekly": 170568.0,
+        "marginal_for_campaign": 487337.0
+      },
+      "why_selected": {
+        "relevance_score": 0.8927,
+        "reason": "56% of local population in target age range (18_34, 35_54); commuter index 0.54; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::DAT-LOC-0012",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 913,
+      "screen_id": "DAT-SCR-002624",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "DAT-LOC-0016",
+        "name": "Milltown Central",
+        "location_type": "metro_station",
+        "city_id": "DAT",
+        "city_name": "DA Town",
+        "market_tier": "standard",
+        "zone_id": "DAT-ZONE-006",
+        "zone_name": "Milltown"
+      },
+      "route": {
+        "primary_corridor_id": "DAT-RT-M002",
+        "route_names": [
+          "Green Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Milltown; value-income area (blue_collar skew); ~50,246 riders in this block; nearby draws: shopping mall, residential tower; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "value-income",
+          "blue_collar",
+          "high-footfall",
+          "shopping_mall",
+          "network-hub"
+        ],
+        "riders_in_block": 50246.3,
+        "daily_riders_exposed": 50246.0,
+        "commuter_score": 0.54,
+        "income_index": 83.8,
+        "median_age": 41.7,
+        "dominant_occupation": "blue_collar",
+        "top_nearby_poi_types": [
+          "shopping_mall",
+          "residential_tower",
+          "government_building"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 41.2,
+        "price_target_per_slot_per_day": 42.86,
+        "price_cap_per_slot_per_day": 74.16,
+        "cost_per_day": 42.86,
+        "cost_for_campaign": 857.2,
+        "campaign_days": 20,
+        "demand_score": 0.067,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 25701.0,
+        "marginal_daily_after_overlap": 24274.0,
+        "overlap_discount_applied": 1428.0,
+        "marginal_weekly": 169916.0,
+        "marginal_for_campaign": 485475.0
+      },
+      "why_selected": {
+        "relevance_score": 0.8667,
+        "reason": "52% of local population in target age range (18_34, 35_54); commuter index 0.54; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::DAT-LOC-0016",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    },
+    {
+      "rank": 888,
+      "screen_id": "ACS-SCR-001303",
+      "screen": {
+        "kind": "fixed",
+        "type": "metro_station",
+        "mount_position": "platform",
+        "size": "S"
+      },
+      "location": {
+        "location_id": "ACS-LOC-0026",
+        "name": "Greenhollow Terminal",
+        "location_type": "metro_station",
+        "city_id": "ACS",
+        "city_name": "Accordionshire",
+        "market_tier": "value",
+        "zone_id": "ACS-ZONE-006",
+        "zone_name": "Greenhollow"
+      },
+      "route": {
+        "primary_corridor_id": "ACS-RT-M002",
+        "route_names": [
+          "Green Line"
+        ]
+      },
+      "time_slot": {
+        "time_block_id": 5,
+        "hours": "16:00-20:00",
+        "daypart": "evening",
+        "rotation_slots_per_day": 1
+      },
+      "audience": {
+        "profile": "Evening block, roadside/platform panel; serving Greenhollow; mid-income area (mixed skew); ~54,376 riders in this block; nearby draws: shopping mall, grocery anchor; network hub adjacency.",
+        "tags": [
+          "evening",
+          "fixed",
+          "mid-income",
+          "mixed",
+          "high-footfall",
+          "shopping_mall",
+          "network-hub"
+        ],
+        "riders_in_block": 54376.4,
+        "daily_riders_exposed": 54376.0,
+        "commuter_score": 0.514,
+        "income_index": 109.9,
+        "median_age": 47.1,
+        "dominant_occupation": "mixed",
+        "top_nearby_poi_types": [
+          "shopping_mall",
+          "grocery_anchor",
+          "residential_tower"
+        ],
+        "data_confidence": "high"
+      },
+      "pricing": {
+        "price_floor_per_slot_per_day": 41.92,
+        "price_target_per_slot_per_day": 41.97,
+        "price_cap_per_slot_per_day": 41.97,
+        "cost_per_day": 41.97,
+        "cost_for_campaign": 839.4,
+        "campaign_days": 20,
+        "demand_score": 0.1558,
+        "demand_basis": "own_history"
+      },
+      "impressions": {
+        "standalone_daily": 27814.0,
+        "marginal_daily_after_overlap": 23535.0,
+        "overlap_discount_applied": 4279.0,
+        "marginal_weekly": 164744.0,
+        "marginal_for_campaign": 470698.0
+      },
+      "why_selected": {
+        "relevance_score": 0.8675,
+        "reason": "53% of local population in target age range (18_34, 35_54); commuter index 0.51; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign",
+        "audience_cluster": "LOC::ACS-LOC-0026",
+        "cluster_note": "Shares an audience with any other selected screen in the same cluster -- reach is discounted, not double-counted."
+      }
+    }
+  ],
+  "narrative": "This 20-day conversion package is essentially fully allocated at $21,855.60, using 99.3% of the $22,000 budget. It delivers 840,342 projected impressions per day, or 5,882,396 per week, across 24 unique screens/time-block pairs and 24 clusters, with an average relevance score of 0.715.\n\nThe strongest options are the evening placements on LH-SCR-004536 and LH-SCR-003202: both match the requested evening daypart, sit in areas where 85% of the local population is in the 18_34/35_54 target range, have a commuter index of 0.52, and are near shopping mall POIs. LH-SCR-004536 is the best value among the top screens at $54.69 with 47,286 marginal daily impressions; LH-SCR-003202 is similar at $56.33 and 46,367 impressions.\n\nLH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is outside the requested evening daypart, so it\u2019s the main caveat if daypart alignment matters for conversion. LH-SCR-003019 has weaker age fit at 57% but still matches evening and delivers 45,352 impressions. LH-SCR-002359 is the weakest age match at 48%, though it remains evening-aligned and near shopping malls."
+}
