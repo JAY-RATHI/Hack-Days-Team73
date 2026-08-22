@@ -9,7 +9,7 @@
   "target_zones_text": [
     "Las Hackland's business district",
     "business-park food court",
-    "surrounding commercial district"
+    "food-court and plaza settings"
   ],
   "target_age_min": 18,
   "target_age_max": 35,
@@ -19,15 +19,15 @@
     "students",
     "health-conscious",
     "lunch-hour footfall",
-    "short lunch window",
-    "highly local"
+    "local",
+    "short lunch window"
   ],
   "poi_affinities": [
     "office_park",
     "grocery_anchor",
     "entertainment_district"
   ],
-  "objective": "frequency",
+  "objective": "conversion",
   "preferred_dayparts": [
     "midday"
   ],
@@ -39,6 +39,7 @@
   ],
   "location_type_preference": null,
   "rotation_slots_per_day": null,
+  "start_date": null,
   "raw_brief_text": "CLIENT BRIEF 4: BASIL & BLOOM \u2014 FRESH, FAST, FLAVORFUL\nCompany Name: Basil & Bloom Fast-Casual Kitchens\nIndustry Vertical: FOOD & BEVERAGE / QSR\nCampaign Objective: Lunch-Hour Footfall & Local Recall\nTarget Audience: Office workers and students (Ages 18-35)\nCampaign Budget: USD 9,000\nCampaign Duration: 15 Days (Proposed: New-outlet launch window)\n1. Executive Summary & Objective\nBasil & Bloom is a fast-casual salad-and-bowl chain opening its first location in Las Hackland's business district. The campaign objective is driving trial during the two-week launch window, with success measured by lunch-hour footfall at the new outlet rather than broad brand awareness.\n2. Target Audience & Persona\nThe target customer is a health-conscious office worker or student with a short lunch window who defaults to familiar options unless given a specific reason to try something new. They are highly local \u2014 the campaign only needs to reach people within a short walk of the new outlet \u2014 and respond well to limited-time offers and \"just opened\" messaging.\n3. Digital Screen Selection & Location Requirements\nImmediate Walking Radius of the New Outlet: Screens within a short walking distance of a single new outlet located in a business-park food court \u2014 the campaign's entire reach requirement sits inside that radius.\nMidday Commercial-District Coverage: Screens in the surrounding commercial district, weighted specifically to the lunch window.\nExclusion Criteria: Exclude all nodes outside a realistic walking distance of the outlet. Reach beyond that radius is wasted spend for a single-location launch.\n4. Visual / Mockup Details & Slot Parameters\nBasil & Bloom will supply a bright static visual \u2014 vibrant green and warm yellow tones, appetizing product photography, and legible large-format copy: \"Fresh. Fast. Flavorful.\" with a \"10% Off First Order\" offer. Canvas optimized for wide-format screens visible from a distance in food-court and plaza settings.\nReference Mockup A \u2014 Fresh & Appetizing \u2014 Vibrant Green & Warm Yellow\nReference Mockup B \u2014 16:9 Food-Court / Plaza Wide-Screen Display\n5. RFP Requirements (Sales Team Response)\nTo accept this campaign brief, the Urban Media commercial intelligence agent must generate a formalized response containing:\n1. A tightly-scoped inventory list limited to screens within realistic walking distance of the single new outlet.\n2. Pricing reflecting the hyper-local, midday-weighted delivery pattern.\n3. A footfall-conversion-oriented reach estimate for the 15-day launch window, explicitly stating the walking-radius logic behind screen selection."
 }
 ```
@@ -73,17 +74,18 @@
   "cost_basis": "total_campaign",
   "total_projected_impressions_per_day": 462644.0,
   "total_projected_impressions_per_week": 3238505.0,
-  "avg_relevance_score_selected": 0.857
+  "avg_relevance_score_selected": 0.857,
+  "availability": {
+    "checked": false,
+    "note": "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
+  },
+  "caveat_availability": "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
 }
 ```
 
 ## Narrative
 
-For a frequency-led buy in LH, this package is a strong fit: 12 unique screens across 12 clusters for 15 days, using 95.1% of the $9,000 budget at a total cost of $8,562.75. The plan is delivering 462,644 projected impressions per day, or 3,238,505 per week, with an average relevance score of 0.857.
-
-The strongest individual options are all midday placements (time block 3). LH-SCR-003222 is the top pick at $49.34 with 45,017 marginal daily impressions, and it hits 85% of the local population in the 18_34 and 35_54 ranges, plus nearby entertainment district POIs. LH-SCR-002837 is nearly as strong at $45.08 and 44,503 impressions, with the same 85% age fit and both grocery anchor and entertainment district POIs. LH-SCR-002699 is the cheapest of the top five at $44.14 and still delivers 42,922 impressions with the same 85% age fit.
-
-One caveat: the walking-distance exclusion for nodes outside a realistic distance of the outlet was not enforced, so flag that to the team before finalizing.
+For a conversion-focused push in LH, this package is strong on midday reach and audience fit: the selected set delivers 462,644 projected impressions per day over 15 days, with 3,238,505 per week, while using 95.1% of the $9,000 budget at a total cost of $8,562.75. The best-fit screens are the midday time block 3 placements with 85% of local population in the 18_34 and 35_54 target range, a commuter index of 0.52, and nearby POIs that support conversion intent. The top options by marginal daily impressions are LH-SCR-003222 at 45,017 for $49.34, LH-SCR-002837 at 44,503 for $45.08, and LH-SCR-002699 at 42,922 for $44.14. LH-SCR-005502 is weaker on audience fit at 53% in the target age range but still brings 41,676 impressions for $46.22. LH-SCR-004542 adds both entertainment_district and grocery_anchor context with 40,771 impressions for $48.06. One important caveat: the walking-distance exclusion was not enforced, so nodes outside a realistic walking distance of the outlet may still be included. Also, availability was not checked because no start date was provided, so all candidates were assumed available.
 
 ## Selected screens
 

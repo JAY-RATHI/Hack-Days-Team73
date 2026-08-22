@@ -19,13 +19,14 @@
   "target_age_max": 55,
   "target_income_tier": "high",
   "audience_descriptors": [
-    "Frequent flyers",
+    "frequent flyers",
     "business travelers",
     "leisure travelers",
     "frequent business travellers",
     "higher-income leisure travelers",
     "planning trips well in advance",
-    "daily commute"
+    "daily commute",
+    "in a travel mindset"
   ],
   "poi_affinities": [
     "office_park",
@@ -40,6 +41,7 @@
   "exclusion_criteria": [],
   "location_type_preference": null,
   "rotation_slots_per_day": null,
+  "start_date": null,
   "raw_brief_text": "CLIENT BRIEF 5: SKYNIMBUS AIRLINES \u2014 FLY FURTHER, FEEL CLOSER\nCompany Name: SkyNimbus Airlines Ltd.\nIndustry Vertical: TRAVEL & AVIATION\nCampaign Objective: New Route Awareness & Bookings\nTarget Audience: Frequent flyers, business and leisure travelers (Ages 28-55)\nCampaign Budget: USD 35,000\nCampaign Duration: 40 Days (Proposed: Route-launch window, Q2 2027)\n1. Executive Summary & Objective\nSkyNimbus is launching twelve new international direct routes from Las Hackland and needs to build awareness among both business travelers who book frequently and leisure travelers planning ahead. The campaign favors aspirational, premium creative over discount messaging, with a secondary goal of driving direct bookings via the airline's app.\n2. Target Audience & Persona\nThe audience splits into two overlapping groups: frequent business travelers who move through the city's financial core on a predictable schedule, and higher-income leisure travelers who plan trips well in advance. Both groups pass through the city's primary airport-transit corridor and premium business nodes regularly, making those corridors the natural anchor for reach.\n3. Digital Screen Selection & Location Requirements\nAirport Transit Corridor: Premium wide-format screens along the primary airport access corridor \u2014 the single highest-relevance environment for a travel campaign, reaching an audience already in a travel mindset.\nPremium Business Core: Screens across the city's premium commercial core, reaching frequent business travellers on their daily commute.\nFinancial District Coverage: Supplementary placement at major financial-district metro nodes for repeated business-traveller exposure across the campaign window.\n4. Visual / Mockup Details & Slot Parameters\nSkyNimbus will supply a premium motion asset. Sky-blue gradients transitioning to white, aspirational aerial photography style, and clean sans-serif typography reading \"Fly Further. Feel Closer.\" Canvas optimized for wide-format premium transit corridor screens.\nReference Mockup A \u2014 Aspirational Premium \u2014 Sky Blue & White\nReference Mockup B \u2014 16:9 Airport Transit Corridor Wide-Screen Display\n5. RFP Requirements (Sales Team Response)\nTo accept this campaign brief, the Urban Media commercial intelligence agent must generate a formalized response containing:\n1. A curated list of screens anchored on the airport transit corridor and the premium business core.\n2. Pricing reflecting premium-corridor demand and the overlap between the business and leisure traveller audiences.\n3. Projected reach across the 40-day window, with separate estimates for repeat business-traveller frequency and one-time leisure-traveller exposure."
 }
 ```
@@ -68,15 +70,18 @@
   "cost_basis": "total_campaign",
   "total_projected_impressions_per_day": 650352.0,
   "total_projected_impressions_per_week": 4552467.0,
-  "avg_relevance_score_selected": 0.722
+  "avg_relevance_score_selected": 0.722,
+  "availability": {
+    "checked": false,
+    "note": "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
+  },
+  "caveat_availability": "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
 }
 ```
 
 ## Narrative
 
-For a conversion-focused push in LH, this package is essentially fully deployed: 16 unique screens across 16 clusters for 40 days, using 98.1% of the $35,000 budget at a total cost of $34,339.60. The plan is delivering 650,352 projected impressions per day, or 4,552,467 per week, with an average relevance score of 0.722.
-
-The strongest individual options are all time block 5. LH-SCR-002359 is the most efficient of the top five at $53.65 with 46,114 marginal daily impressions, driven by 76% of the local population in the target age range, a commuter index of 0.51, and nearby tourist landmark POIs. LH-SCR-003593 is also strong at $63.48 and 45,763 impressions, with 86% target-age population plus tourist landmark and office park POIs. LH-SCR-004282 has the highest target-age share in the list at 87%, with 44,251 impressions at $68.53 and office park proximity. LH-SCR-004595 is a good mid-priced option at $58.43 with 44,062 impressions and a 0.53 commuter index. LH-SCR-002514 is similar at $58.86 and 43,674 impressions, with both office park and tourist landmark POIs.
+For a conversion-focused push in LH, this package is strong on both reach and audience fit: it uses 16 unique screen/time-block pairs over 40 days, with 650,352 projected impressions per day and 4,552,467 per week, while staying just under budget at 34,339.6 of 35,000. The selected set is highly concentrated in the target age bands, with the top screens showing 76% to 87% of local population in the 18_34, 35_54, and 55_plus ranges, plus commuter indices around 0.51 to 0.53. The best-value options to highlight are LH-SCR-002359 at 53.65 for 46,114 marginal daily impressions, LH-SCR-004595 at 58.43 for 44,062, and LH-SCR-002514 at 58.86 for 43,674. If you want to emphasize higher audience concentration, LH-SCR-004282 and LH-SCR-004595 both show 87% in target age ranges, while LH-SCR-003593 combines 86% target-age coverage with nearby tourist_landmark and office_park POIs. One caveat: slot availability was not checked because no start date was provided, so all candidates were assumed available.
 
 ## Selected screens
 

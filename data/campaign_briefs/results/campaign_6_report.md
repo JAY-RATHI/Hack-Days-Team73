@@ -14,7 +14,7 @@
     "young women",
     "beauty-conscious commuters",
     "beauty-engaged",
-    "skincare trends followers",
+    "skincare trend followers",
     "frequent mall visitors",
     "regular metro commuters"
   ],
@@ -30,6 +30,7 @@
   "exclusion_criteria": [],
   "location_type_preference": null,
   "rotation_slots_per_day": null,
+  "start_date": null,
   "raw_brief_text": "CLIENT BRIEF 6: LUMI\u00c8RE COSMETICS \u2014 GLOW ON YOUR TERMS\nCompany Name: Lumi\u00e8re Cosmetics Group\nIndustry Vertical: BEAUTY & PERSONAL CARE\nCampaign Objective: New Product Launch Awareness\nTarget Audience: Young women, beauty-conscious commuters (Ages 18-34)\nCampaign Budget: USD 20,000\nCampaign Duration: 25 Days (Proposed: Spring product launch)\n1. Executive Summary & Objective\nLumi\u00e8re is launching a new radiance serum and wants to build product awareness among beauty-conscious commuters ahead of in-store availability. The campaign leans on elegant, aspirational creative rather than discount-driven messaging, positioning the product as a premium addition to an existing skincare routine rather than an impulse buy.\n2. Target Audience & Persona\nThe audience is young, beauty-engaged women who follow skincare trends closely and shop at both mall beauty counters and standalone retail. They are frequent mall visitors and regular metro commuters, and respond to elegant, editorial-style visuals over bold discount signage \u2014 the brand experience matters as much as the offer.\n3. Digital Screen Selection & Location Requirements\nMall Beauty-Retail Entry: Premium vertical screens at shopping centre entrances adjacent to beauty and lifestyle retail concessions, reaching shoppers moments before they pass a beauty counter.\nHigh-Street Retail Corridors: Vertical screens along high-street shopping strips with a concentration of competing beauty retailers.\nCentral Metro Entry Coverage: Supplementary vertical placements at central metro entry points, for repeated commuter exposure ahead of weekend shopping trips.\n4. Visual / Mockup Details & Slot Parameters\nLumi\u00e8re will supply a static editorial visual \u2014 soft blush pink and gold tones, elegant product photography, and refined serif-adjacent typography reading \"Glow On Your Terms.\" Canvas optimized for tall vertical formats at mall and metro entry points.\nReference Mockup A \u2014 Elegant Editorial \u2014 Blush Pink & Gold\nReference Mockup B \u2014 9:16 Vertical Mall / Metro Entry Poster\n5. RFP Requirements (Sales Team Response)\nTo accept this campaign brief, the Urban Media commercial intelligence agent must generate a formalized response containing:\n1. An inventory plan anchored on mall beauty-retail entry points and high-street retail corridors, with supplementary central metro entry coverage.\n2. Pricing reflecting premium mall-entry positioning and the value of beauty-retail adjacency.\n3. A projected reach estimate for the 25-day window, with reasoning tied to beauty-audience affinity at each recommended node type."
 }
 ```
@@ -58,13 +59,22 @@
   "cost_basis": "total_campaign",
   "total_projected_impressions_per_day": 625998.0,
   "total_projected_impressions_per_week": 4381984.0,
-  "avg_relevance_score_selected": 0.633
+  "avg_relevance_score_selected": 0.633,
+  "availability": {
+    "checked": false,
+    "note": "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
+  },
+  "caveat_availability": "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
 }
 ```
 
 ## Narrative
 
-For an awareness push, this package is strong on reach and nearly fully uses budget: total cost is 19,522 against a 20,000 budget, or 97.6% utilization, over 25 days. It delivers 625,998 projected impressions per day and 4,381,984 per week, with an average relevance score of 0.633 across 19 unique screen/time-block pairs spanning 18 clusters. The best-value options are the 18–34-heavy shopping mall placements in time block 3: LH-SCR-002699 at 44.14 with 45,987 marginal daily impressions, LH-SCR-002837 at 45.08 with 42,349, LH-SCR-003222 at 49.34 with 42,017, and LH-SCR-004542 at 48.06 with 40,771. LH-SCR-004282 is also strong for reach at 45,678 daily impressions, but it is pricier at 68.53 and is the only one here tied to both shopping mall and office park POIs. The relevance notes are consistent: 66% of local population in the 18–34 range for the time block 3 screens, with commuter index 0.52; LH-SCR-004282 shows 38% in range and commuter index 0.51. No exclusions were applied.
+For an awareness buy, this package is strong on reach and stays just under budget: 19 screen-timeblock pairs across 19 unique screens and 18 clusters, for a total cost of 19,522 against a 20,000 budget, or 97.6% utilization. It is projected to deliver 625,998 impressions per day and 4,381,984 per week over 25 days, with an average selected relevance score of 0.633.
+
+The best-value options are the 18–34-heavy shopping mall screens in time block 3. LH-SCR-002699 is the top pick at 44.14 with 45,987 daily impressions and a 66% local population in the target age range, plus a commuter index of 0.52. LH-SCR-002837 is nearly as efficient at 45.08 for 42,349 daily impressions, and LH-SCR-003222 and LH-SCR-004542 also sit in the same 66% 18–34 / 0.52 commuter profile. LH-SCR-004282 is the highest-impression of the listed screens at 45,678 daily impressions, but it is pricier at 68.53 and is in time block 5 with 38% 18–34 and nearby shopping mall plus office park POIs.
+
+One important caveat: slot availability was not checked, so all candidates were assumed available.
 
 ## Selected screens
 

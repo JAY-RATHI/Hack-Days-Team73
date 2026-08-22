@@ -68,6 +68,7 @@ def _to_ui_shape(result, conn, brief_name="campaign"):
         "filters": {
             "exclusions": meta.get("exclusion_log") or [],
             "location_type": meta.get("location_filter_log"),
+            "availability": summary.get("availability"),
             "candidates_scored": meta.get("n_screens_scored"),
         },
         "totals": None,
@@ -115,6 +116,7 @@ def _to_ui_shape(result, conn, brief_name="campaign"):
             "time_block": (f"Block {s['time_slot']['time_block_id']} · "
                            f"{s['time_slot']['hours']} ({s['time_slot']['daypart']})"),
             "slots_per_day": s["time_slot"]["rotation_slots_per_day"],
+            "slots_available": s["time_slot"].get("slots_available"),
             "price_floor": s["pricing"]["price_floor_per_slot_per_day"],
             "price_target": s["pricing"]["price_target_per_slot_per_day"],
             "price_cap": s["pricing"]["price_cap_per_slot_per_day"],
@@ -164,6 +166,62 @@ def run_feedback(previous_spec, feedback_text, brief_name="campaign"):
                 "selected_screens": [], "caveats": [], "detail": None, "detail_md": None}
     finally:
         conn.close()
+
+
+def parse_only(brief_text=None, docx_path=None):
+    """SENSE stage on its own: brief -> CampaignSpec, no scoring yet.
+    Lets the UI show (and let the rep edit) what the LLM understood BEFORE
+    committing to a full run."""
+    try:
+        from scoring.load_brief_docx import load_brief_text
+        from scoring.brief_parser import parse_brief
+        if docx_path:
+            brief_text = load_brief_text(docx_path)
+        if not brief_text:
+            return {"status": "error", "error": "No brief provided", "spec": None}
+        spec = parse_brief(brief_text)
+        return {"status": "ok", "spec": spec, "error": None}
+    except Exception as e:
+        return {"status": "error", "error": f"{type(e).__name__}: {e}", "spec": None}
+
+
+def run_with_spec(spec, brief_name="campaign"):
+    """PLAN/ACT stages: score -> price -> optimize -> narrate, from an
+    already-parsed (possibly rep-edited) spec. Skips the parse entirely, so
+    an edited spec is used EXACTLY as shown -- no LLM reinterpretation."""
+    conn = _connect()
+    try:
+        result = run_campaign(conn, spec=spec)
+        return _to_ui_shape(result, conn, brief_name)
+    except Exception as e:
+        return {"status": "error", "spec": spec, "narrative": f"{type(e).__name__}: {e}",
+                "campaign_summary": None, "filters": None, "totals": None,
+                "selected_screens": [], "caveats": [], "detail": None, "detail_md": None}
+    finally:
+        conn.close()
+
+
+def compute_diff(prev_ui, new_ui):
+    """What changed between two 'ok' results -- powers the feedback diff
+    chips. Keys screens by (screen_id, time_block) so a screen moving to a
+    different slot counts as a real change, not a no-op."""
+    if not prev_ui or prev_ui.get("status") != "ok" or new_ui.get("status") != "ok":
+        return None
+
+    def keys(ui):
+        return {(s["screen_id"], s["time_block"]) for s in ui["selected_screens"]}
+
+    prev_k, new_k = keys(prev_ui), keys(new_ui)
+    pt, nt = prev_ui["totals"], new_ui["totals"]
+    return {
+        "screens_added": sorted(k[0] for k in (new_k - prev_k)),
+        "screens_removed": sorted(k[0] for k in (prev_k - new_k)),
+        "n_unchanged": len(prev_k & new_k),
+        "cost_delta": round((nt["total_price"] or 0) - (pt["total_price"] or 0), 2),
+        "reach_delta": round((nt["reach_after_dedup"] or 0) - (pt["reach_after_dedup"] or 0)),
+        "impressions_week_delta": round((nt["impressions_per_week"] or 0)
+                                        - (pt["impressions_per_week"] or 0)),
+    }
 
 
 def list_available_briefs():

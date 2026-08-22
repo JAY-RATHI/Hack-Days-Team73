@@ -69,6 +69,8 @@ import sqlite3
 import pandas as pd
 import numpy as np
 
+from optimization.availability import annotate_availability
+
 DB_PATH = os.environ.get("URBAN_DB", "db/urban_media.db")
 
 # --- Judgment-call constants, documented so they're easy to retune ---
@@ -183,6 +185,15 @@ def optimize_package(scored_priced_df, spec, conn):
         return pd.DataFrame(), {"note": "no candidates above minimum relevance threshold"}
 
     cand = build_candidates(pool, conn, rotation_slots)
+
+    # PS-required slot-availability check ("...if three other advertisers are
+    # competing for the same inventory that week"). Runs only when the brief
+    # states a start date; otherwise logs a loud caveat and changes nothing.
+    cand, availability_log = annotate_availability(cand, spec, conn)
+    if cand.empty:
+        return pd.DataFrame(), {"note": "no candidates available for the requested window",
+                                "availability": availability_log}
+
     overlap_lookup = get_corridor_overlap(conn)
 
     # --- PERFORMANCE FIX, part 1: pre-filter by cheap raw efficiency BEFORE
@@ -274,6 +285,10 @@ def optimize_package(scored_priced_df, spec, conn):
         "total_projected_impressions_per_week": round(total_impressions_daily * 7, 0),
         "avg_relevance_score_selected": round(package.relevance_score.mean(), 3),
     }
+    summary["availability"] = availability_log
+    if availability_log.get("note") or availability_log.get("warning"):
+        summary.setdefault("caveat_availability",
+                           availability_log.get("warning") or availability_log.get("note"))
     if ambiguous_budget_duration:
         summary["caveat"] = (
             f"Campaign duration wasn't stated, so ${budget:,.0f} couldn't be applied as a "

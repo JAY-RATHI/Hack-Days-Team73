@@ -129,6 +129,11 @@ def describe_screen(row, lk, profiles, duration_days):
             "hours": safe_get(lk["slots"], tb, "time_block_label"),
             "daypart": safe_get(lk["slots"], tb, "nearest_daypart"),
             "rotation_slots_per_day": slots_per_day,
+            # None when availability wasn't checked (no start date in brief)
+            "slots_available": (int(getattr(row, "slots_available"))
+                                if getattr(row, "slots_available", None) is not None
+                                and pd.notna(getattr(row, "slots_available"))
+                                else None),
         },
         "audience": {
             "profile": prof.profile_text if prof is not None else None,
@@ -197,10 +202,12 @@ def build_detailed_recommendation(result, conn, brief_name):
         "filters_applied": {
             "exclusions": meta.get("exclusion_log"),
             "location_type": meta.get("location_filter_log"),
+            "availability": (summary or {}).get("availability"),
             "candidates_scored": meta.get("n_screens_scored"),
         },
         "package_totals": summary,
         "caveats": [c for c in [summary.get("caveat"), summary.get("note"),
+                                summary.get("caveat_availability"),
                                 (meta.get("location_filter_log") or {}).get("warning")] if c],
         "recommended_screens": [],
     }

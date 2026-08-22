@@ -14,14 +14,14 @@
     "style-conscious shoppers",
     "working professional",
     "student",
-    "seasonal shoppers",
+    "shops seasonally",
     "weekend shoppers",
     "post-work weekday evenings"
   ],
   "poi_affinities": [
     "shopping_mall"
   ],
-  "objective": "conversion",
+  "objective": "frequency",
   "preferred_dayparts": [
     "evening"
   ],
@@ -31,6 +31,7 @@
   "exclusion_criteria": [],
   "location_type_preference": null,
   "rotation_slots_per_day": null,
+  "start_date": null,
   "raw_brief_text": "CLIENT BRIEF 3: LOOM & THREAD \u2014 WEAR YOUR STORY\nCompany Name: Loom & Thread Apparel Co.\nIndustry Vertical: RETAIL / FASHION\nCampaign Objective: Seasonal Footfall & Sale Awareness\nTarget Audience: Style-conscious shoppers (Ages 20-40)\nCampaign Budget: USD 22,000\nCampaign Duration: 20 Days (Proposed: Autumn Collection Launch)\n1. Executive Summary & Objective\nLoom & Thread is a mid-premium apparel brand launching its Autumn Collection alongside a citywide seasonal sale. The campaign objective is footfall to flagship and mall locations within the promotional window. Unlike the brand's usual editorial-only advertising, this campaign carries an explicit commercial call to action tied to the sale dates.\n2. Target Audience & Persona\nThe target shopper is a working professional or student who shops seasonally rather than impulsively, follows a handful of apparel brands closely, and is influenced by editorial-style imagery over discount signage. They shop on weekends and post-work weekday evenings, favoring mall and high-street retail nodes over purely residential or industrial corridors.\n3. Digital Screen Selection & Location Requirements\nPremium Mall Entry Points: High-footfall digital boards at the entrances of the network's largest shopping centres, where shoppers arrive with purchase intent already formed.\nHigh-Street Retail Corridors: Screens along established high-street shopping strips with a concentration of competing apparel retailers.\nWeekend Weighting: Requesting weighted delivery from Friday evening through Sunday, aligned with peak discretionary shopping behaviour.\n4. Visual / Mockup Details & Slot Parameters\nLoom & Thread will supply a static editorial-style visual \u2014 earthy tones, natural linen textures, and minimal sale messaging (\"Autumn Edit \u2014 Now In Store\"). Canvas optimized for tall vertical formats at mall entries and high-street poster positions.\nReference Mockup A \u2014 Editorial Warmth \u2014 Earthy Tones & Natural Textures\nReference Mockup B \u2014 9:16 Vertical Mall Entry / High-Street Poster\n5. RFP Requirements (Sales Team Response)\nTo accept this campaign brief, the Urban Media commercial intelligence agent must generate a formalized response containing:\n1. An inventory plan anchored on premium mall entry points and high-street retail corridors.\n2. Pricing reflecting weekend-weighted delivery and premium mall-entry positioning.\n3. A footfall-oriented reach projection for the 20-day sale window, with the weekend-versus-weekday impression split shown separately."
 }
 ```
@@ -59,17 +60,22 @@
   "cost_basis": "total_campaign",
   "total_projected_impressions_per_day": 840342.0,
   "total_projected_impressions_per_week": 5882396.0,
-  "avg_relevance_score_selected": 0.715
+  "avg_relevance_score_selected": 0.715,
+  "availability": {
+    "checked": false,
+    "note": "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
+  },
+  "caveat_availability": "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
 }
 ```
 
 ## Narrative
 
-This 20-day conversion package is essentially fully allocated at $21,855.60, using 99.3% of the $22,000 budget. It delivers 840,342 projected impressions per day, or 5,882,396 per week, across 24 unique screens/time-block pairs and 24 clusters, with an average relevance score of 0.715.
+For a frequency buy, this package is strong on reach volume and stays essentially on budget: 24 screen-timeblock pairs across 24 unique screens for 20 days, totaling $21,855.60 against a $22,000 budget (99.3% utilized). Projected delivery is 840,342 impressions per day, or 5,882,396 per week, so it should build repetition quickly.
 
-The strongest options are the evening placements on LH-SCR-004536 and LH-SCR-003202: both match the requested evening daypart, sit in areas where 85% of the local population is in the 18_34/35_54 target range, have a commuter index of 0.52, and are near shopping mall POIs. LH-SCR-004536 is the best value among the top screens at $54.69 with 47,286 marginal daily impressions; LH-SCR-003202 is similar at $56.33 and 46,367 impressions.
+The best-fit screens are LH-SCR-004536 and LH-SCR-003202, both in time block 5, with 85% of the local population in the target age range, commuter index 0.52, evening daypart match, and nearby shopping mall POIs. They also deliver the strongest marginal daily impressions in the set at 47,286 and 46,367, with price targets of $54.69 and $56.33. LH-SCR-003019 is also evening-aligned but has weaker age fit at 57% and a higher price target of $67.52. LH-SCR-002699 is cheaper at $44.14 and still has 45,987 marginal daily impressions, but it is outside the requested evening daypart. LH-SCR-002359 is the weakest of the top five on audience fit at 48% and commuter index 0.51.
 
-LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is outside the requested evening daypart, so it’s the main caveat if daypart alignment matters for conversion. LH-SCR-003019 has weaker age fit at 57% but still matches evening and delivers 45,352 impressions. LH-SCR-002359 is the weakest age match at 48%, though it remains evening-aligned and near shopping malls.
+One caveat: slot availability was not checked, so all candidates were assumed available.
 
 ## Selected screens
 

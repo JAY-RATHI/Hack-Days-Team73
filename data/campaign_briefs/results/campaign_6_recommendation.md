@@ -7,12 +7,16 @@
 - **Objective:** awareness
 - **Target age:** 18–34
 - **Income tier:** high
-- **Audience:** young women, beauty-conscious commuters, beauty-engaged, skincare trends followers, frequent mall visitors, regular metro commuters
+- **Audience:** young women, beauty-conscious commuters, beauty-engaged, skincare trend followers, frequent mall visitors, regular metro commuters
 - **POI affinities:** shopping_mall, office_park
 - **Budget:** 20000.0
 - **Duration:** 25 days
 - **Requested dayparts:** none stated
 - **City resolved to:** all cities (none named in brief)
+
+## Caveats — read these
+
+- Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available.
 
 ## Filters applied
 
@@ -29,7 +33,11 @@
 
 ## Summary for the rep
 
-For an awareness push, this package is strong on reach and nearly fully uses budget: total cost is 19,522 against a 20,000 budget, or 97.6% utilization, over 25 days. It delivers 625,998 projected impressions per day and 4,381,984 per week, with an average relevance score of 0.633 across 19 unique screen/time-block pairs spanning 18 clusters. The best-value options are the 18–34-heavy shopping mall placements in time block 3: LH-SCR-002699 at 44.14 with 45,987 marginal daily impressions, LH-SCR-002837 at 45.08 with 42,349, LH-SCR-003222 at 49.34 with 42,017, and LH-SCR-004542 at 48.06 with 40,771. LH-SCR-004282 is also strong for reach at 45,678 daily impressions, but it is pricier at 68.53 and is the only one here tied to both shopping mall and office park POIs. The relevance notes are consistent: 66% of local population in the 18–34 range for the time block 3 screens, with commuter index 0.52; LH-SCR-004282 shows 38% in range and commuter index 0.51. No exclusions were applied.
+For an awareness buy, this package is strong on reach and stays just under budget: 19 screen-timeblock pairs across 19 unique screens and 18 clusters, for a total cost of 19,522 against a 20,000 budget, or 97.6% utilization. It is projected to deliver 625,998 impressions per day and 4,381,984 per week over 25 days, with an average selected relevance score of 0.633.
+
+The best-value options are the 18–34-heavy shopping mall screens in time block 3. LH-SCR-002699 is the top pick at 44.14 with 45,987 daily impressions and a 66% local population in the target age range, plus a commuter index of 0.52. LH-SCR-002837 is nearly as efficient at 45.08 for 42,349 daily impressions, and LH-SCR-003222 and LH-SCR-004542 also sit in the same 66% 18–34 / 0.52 commuter profile. LH-SCR-004282 is the highest-impression of the listed screens at 45,678 daily impressions, but it is pricier at 68.53 and is in time block 5 with 38% 18–34 and nearby shopping mall plus office park POIs.
+
+One important caveat: slot availability was not checked, so all candidates were assumed available.
 
 ---
 
@@ -46,8 +54,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0964 (basis: own_history)
 - **Audience reached:** 45,987/day · 321,907/week · 1,149,666 over the campaign
 - **Standalone reach:** 45,987/day (overlap discount applied: −0)
-- **Who's there:** Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~89,903 riders in this block; nearby draws: university, grocery anchor; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, university, network-hub
+- **Who's there:** Midday audience in Uptown Crescent is mostly 18 to 34, student-led, with nearby university, grocery, shopping, and residential places.
+- **Audience tags:** 18_34, student, university, grocery_anchor, shopping_mall, residential_tower
 - **Nearby POIs:** university, grocery_anchor, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.6285):** 66% of local population in target age range (18_34); commuter index 0.52; nearby shopping_mall POI(s) relevant to campaign
@@ -64,8 +72,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0275 (basis: own_history)
 - **Audience reached:** 45,678/day · 319,749/week · 1,141,959 over the campaign
 - **Standalone reach:** 45,678/day (overlap discount applied: −0)
-- **Who's there:** Evening block, roadside/platform panel; serving Riverside Junction; mid-income area (mixed skew); ~89,301 riders in this block; nearby draws: office park, shopping mall; network hub adjacency.
-- **Audience tags:** evening, fixed, mid-income, mixed, high-footfall, office_park, network-hub
+- **Who's there:** Evening audience in Riverside Junction is younger, with a median age of 34.3, high density, and nearby office, shopping, grocery, and entertainment activity.
+- **Audience tags:** younger adults, high density, office, shopping, grocery, entertainment
 - **Nearby POIs:** office_park, shopping_mall, entertainment_district
 - **Data confidence:** high
 - **Why this screen (relevance 0.7093):** 38% of local population in target age range (18_34); commuter index 0.51; nearby shopping_mall, office_park POI(s) relevant to campaign
@@ -82,8 +90,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0212 (basis: own_history)
 - **Audience reached:** 42,349/day · 296,442/week · 1,058,721 over the campaign
 - **Standalone reach:** 44,503/day (overlap discount applied: −2,154)
-- **Who's there:** Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~87,002 riders in this block; nearby draws: grocery anchor, university; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience in Uptown Crescent is mostly 18 to 34, student-led, with nearby university, grocery, shopping, and entertainment places.
+- **Audience tags:** 18_34, student, university, grocery_anchor, shopping_mall, entertainment_district
 - **Nearby POIs:** grocery_anchor, university, entertainment_district
 - **Data confidence:** high
 - **Why this screen (relevance 0.6134):** 66% of local population in target age range (18_34); commuter index 0.52; nearby shopping_mall POI(s) relevant to campaign
@@ -100,8 +108,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0976 (basis: own_history)
 - **Audience reached:** 42,017/day · 294,116/week · 1,050,414 over the campaign
 - **Standalone reach:** 45,017/day (overlap discount applied: −3,000)
-- **Who's there:** Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~88,007 riders in this block; nearby draws: entertainment district, residential tower; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, entertainment_district, network-hub
+- **Who's there:** Midday audience in Uptown Crescent with high footfall, centered on entertainment, university, residential tower, and shopping mall sites; median age 28.1 and students dominate.
+- **Audience tags:** entertainment_district, university, residential_tower, shopping_mall, student
 - **Nearby POIs:** entertainment_district, residential_tower, university
 - **Data confidence:** high
 - **Why this screen (relevance 0.6039):** 66% of local population in target age range (18_34); commuter index 0.52; nearby shopping_mall POI(s) relevant to campaign
@@ -118,8 +126,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0182 (basis: own_history)
 - **Audience reached:** 40,771/day · 285,399/week · 1,019,284 over the campaign
 - **Standalone reach:** 43,683/day (overlap discount applied: −2,911)
-- **Who's there:** Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~85,399 riders in this block; nearby draws: university, entertainment district; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, university, network-hub
+- **Who's there:** Midday audience in Uptown Crescent with high footfall, centered on university, entertainment, grocery, and shopping mall sites; median age 28.1 and students dominate.
+- **Audience tags:** university, entertainment_district, grocery_anchor, shopping_mall, student
 - **Nearby POIs:** university, entertainment_district, grocery_anchor
 - **Data confidence:** high
 - **Why this screen (relevance 0.58):** 66% of local population in target age range (18_34); commuter index 0.52; nearby shopping_mall POI(s) relevant to campaign
@@ -136,8 +144,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0909 (basis: own_history)
 - **Audience reached:** 37,874/day · 265,118/week · 946,850 over the campaign
 - **Standalone reach:** 37,874/day (overlap discount applied: −0)
-- **Who's there:** Midday block, roadside/platform panel; serving Bellwood; value-income area (student skew); ~74,043 riders in this block; nearby draws: grocery anchor, shopping mall; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience in Bellwood is mostly 18 to 34, student-led, with nearby grocery, shopping, university, and entertainment places.
+- **Audience tags:** 18_34, student, grocery_anchor, shopping_mall, university, entertainment_district
 - **Nearby POIs:** grocery_anchor, shopping_mall, university
 - **Data confidence:** high
 - **Why this screen (relevance 0.7183):** 65% of local population in target age range (18_34); commuter index 0.52; nearby shopping_mall POI(s) relevant to campaign
@@ -154,8 +162,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0913 (basis: own_history)
 - **Audience reached:** 36,139/day · 252,970/week · 903,464 over the campaign
 - **Standalone reach:** 39,943/day (overlap discount applied: −3,805)
-- **Who's there:** Midday block, roadside/platform panel; serving Bellwood; value-income area (student skew); ~78,088 riders in this block; nearby draws: residential tower, grocery anchor; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, residential_tower, network-hub
+- **Who's there:** Midday audience in Bellwood is mostly students, with a median age of 23.9 and 64.8% aged 18-34; grocery, residential tower, and university activity is strong.
+- **Audience tags:** students, 18-34, grocery_anchor, residential_tower, university
 - **Nearby POIs:** residential_tower, grocery_anchor, university
 - **Data confidence:** high
 - **Why this screen (relevance 0.5548):** 65% of local population in target age range (18_34); commuter index 0.52; no nearby POIs match requested type(s): shopping_mall, office_park
@@ -172,8 +180,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0293 (basis: own_history)
 - **Audience reached:** 35,882/day · 251,173/week · 897,048 over the campaign
 - **Standalone reach:** 39,699/day (overlap discount applied: −3,817)
-- **Who's there:** Midday block, roadside/platform panel; serving Central Yard; high-income area (white_collar skew); ~77,611 riders in this block; nearby draws: shopping mall, museum; network hub adjacency.
-- **Audience tags:** midday, fixed, high-income, white_collar, high-footfall, shopping_mall, network-hub
+- **Who's there:** Midday audience in Central Yard is mainly white_collar, with a median age of 32.7 and 38.9% aged 35-54; shopping, university, and grocery activity is strong.
+- **Audience tags:** white_collar, 35-54, shopping_mall, university, grocery_anchor
 - **Nearby POIs:** shopping_mall, museum, grocery_anchor
 - **Data confidence:** high
 - **Why this screen (relevance 0.7008):** 37% of local population in target age range (18_34); commuter index 0.52; nearby office_park, shopping_mall POI(s) relevant to campaign
@@ -190,8 +198,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0837 (basis: own_history)
 - **Audience reached:** 34,746/day · 243,223/week · 868,654 over the campaign
 - **Standalone reach:** 36,790/day (overlap discount applied: −2,044)
-- **Who's there:** Evening block, roadside/platform panel; serving Union Flats; mid-income area (mixed skew); ~71,924 riders in this block; nearby draws: shopping mall, residential tower; network hub adjacency.
-- **Audience tags:** evening, fixed, mid-income, mixed, high-footfall, shopping_mall, network-hub
+- **Who's there:** Evening audience in Union Flats is mixed in age, with mixed occupation and nearby shopping mall, residential tower, grocery anchor, and entertainment district.
+- **Audience tags:** mixed_age, mixed_occupation, shopping_mall, residential_tower, grocery_anchor, entertainment_district
 - **Nearby POIs:** shopping_mall, residential_tower, grocery_anchor
 - **Data confidence:** high
 - **Why this screen (relevance 0.7135):** 38% of local population in target age range (18_34); commuter index 0.54; nearby shopping_mall POI(s) relevant to campaign
@@ -208,8 +216,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0382 (basis: own_history)
 - **Audience reached:** 33,930/day · 237,513/week · 848,262 over the campaign
 - **Standalone reach:** 37,503/day (overlap discount applied: −3,572)
-- **Who's there:** Midday block, roadside/platform panel; serving Bellwood; value-income area (student skew); ~73,317 riders in this block; nearby draws: university, residential tower; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, university, network-hub
+- **Who's there:** Midday audience in Bellwood is mostly 18 to 34, student-led, with nearby university, grocery, residential, and entertainment places.
+- **Audience tags:** 18_34, student, university, grocery_anchor, residential_tower, entertainment_district
 - **Nearby POIs:** university, residential_tower, grocery_anchor
 - **Data confidence:** high
 - **Why this screen (relevance 0.5548):** 65% of local population in target age range (18_34); commuter index 0.52; no nearby POIs match requested type(s): shopping_mall, office_park
@@ -226,8 +234,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0359 (basis: own_history)
 - **Audience reached:** 31,877/day · 223,137/week · 796,920 over the campaign
 - **Standalone reach:** 33,752/day (overlap discount applied: −1,875)
-- **Who's there:** Midday block, roadside/platform panel; serving Union Flats; mid-income area (mixed skew); ~65,984 riders in this block; nearby draws: office park, grocery anchor; network hub adjacency.
-- **Audience tags:** midday, fixed, mid-income, mixed, high-footfall, office_park, network-hub
+- **Who's there:** Midday audience in Union Flats is mixed, with a median age of 38.8 and 37.9% aged 18-34; office park, grocery, and government building activity is strong.
+- **Audience tags:** mixed, 18-34, office_park, grocery_anchor, government_building
 - **Nearby POIs:** office_park, grocery_anchor, government_building
 - **Data confidence:** high
 - **Why this screen (relevance 0.7135):** 38% of local population in target age range (18_34); commuter index 0.54; nearby office_park, shopping_mall POI(s) relevant to campaign
@@ -244,8 +252,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0351 (basis: own_history)
 - **Audience reached:** 29,556/day · 206,892/week · 738,898 over the campaign
 - **Standalone reach:** 31,033/day (overlap discount applied: −1,477)
-- **Who's there:** Midday block, roadside/platform panel; serving Founders Square; value-income area (retail_service skew); ~60,669 riders in this block; nearby draws: shopping mall, grocery anchor; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, retail_service, high-footfall, shopping_mall, network-hub
+- **Who's there:** Midday audience in Founders Square is mainly retail_service, with a median age of 40.3 and 35.0% aged 35-54; shopping, grocery, and government building activity is strong.
+- **Audience tags:** retail_service, 35-54, shopping_mall, grocery_anchor, government_building
 - **Nearby POIs:** shopping_mall, grocery_anchor, government_building
 - **Data confidence:** high
 - **Why this screen (relevance 0.6151):** 29% of local population in target age range (18_34); commuter index 0.54; nearby shopping_mall POI(s) relevant to campaign
@@ -262,8 +270,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.053 (basis: own_history)
 - **Audience reached:** 29,034/day · 203,241/week · 725,862 over the campaign
 - **Standalone reach:** 30,742/day (overlap discount applied: −1,708)
-- **Who's there:** Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~60,100 riders in this block; nearby draws: university, grocery anchor; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, university, network-hub
+- **Who's there:** Midday audience in Uptown Crescent is mostly students, with a median age of 28.1 and 65.8% aged 18-34; shopping, university, and grocery activity is strong.
+- **Audience tags:** students, 18-34, shopping_mall, university, grocery_anchor
 - **Nearby POIs:** university, grocery_anchor, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.7279):** 66% of local population in target age range (18_34); commuter index 0.52; nearby shopping_mall POI(s) relevant to campaign
@@ -280,8 +288,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0042 (basis: own_history)
 - **Audience reached:** 28,913/day · 202,392/week · 722,828 over the campaign
 - **Standalone reach:** 28,913/day (overlap discount applied: −0)
-- **Who's there:** Midday block, roadside/platform panel; serving Fallowfield; value-income area (student skew); ~56,525 riders in this block; nearby draws: residential tower, entertainment district; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, residential_tower, network-hub
+- **Who's there:** Midday audience in Fallowfield is mostly students, with a median age of 28 and 65.6% aged 18-34; grocery, entertainment, and residential tower activity is strong.
+- **Audience tags:** students, 18-34, grocery, entertainment_district, residential_tower
 - **Nearby POIs:** residential_tower, entertainment_district, grocery_anchor
 - **Data confidence:** high
 - **Why this screen (relevance 0.6124):** 66% of local population in target age range (18_34); commuter index 0.52; nearby shopping_mall POI(s) relevant to campaign
@@ -298,8 +306,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.131 (basis: own_history)
 - **Audience reached:** 26,900/day · 188,298/week · 672,493 over the campaign
 - **Standalone reach:** 26,900/day (overlap discount applied: −0)
-- **Who's there:** Midday block, roadside/platform panel; serving Fallowfield; value-income area (student skew); ~52,588 riders in this block; nearby draws: grocery anchor, stadium arena; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience in Fallowfield is mostly students, with a median age of 28 and 65.6% aged 18-34; grocery, stadium, and university activity is strong.
+- **Audience tags:** students, 18-34, grocery, stadium_arena, university
 - **Nearby POIs:** grocery_anchor, stadium_arena, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.5934):** 66% of local population in target age range (18_34); commuter index 0.51; nearby shopping_mall POI(s) relevant to campaign
@@ -316,8 +324,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.134 (basis: own_history)
 - **Audience reached:** 24,397/day · 170,777/week · 609,918 over the campaign
 - **Standalone reach:** 26,992/day (overlap discount applied: −2,595)
-- **Who's there:** Midday block, roadside/platform panel; serving Northbank; value-income area (mixed skew); ~52,769 riders in this block; nearby draws: shopping mall, tourist landmark; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, mixed, high-footfall, shopping_mall, network-hub
+- **Who's there:** Midday audience in Northbank is mixed-age, with a median age of 40.8, mixed occupation, and nearby shopping, university, tourist, and grocery places.
+- **Audience tags:** mixed_age, mixed, shopping_mall, university, tourist_landmark, grocery_anchor
 - **Nearby POIs:** shopping_mall, tourist_landmark, university
 - **Data confidence:** high
 - **Why this screen (relevance 0.5629):** 16% of local population in target age range (18_34); commuter index 0.51; nearby shopping_mall POI(s) relevant to campaign
@@ -334,8 +342,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0572 (basis: own_history)
 - **Audience reached:** 23,674/day · 165,719/week · 591,855 over the campaign
 - **Standalone reach:** 26,167/day (overlap discount applied: −2,492)
-- **Who's there:** Midday block, roadside/platform panel; serving Bellwood; value-income area (student skew); ~51,155 riders in this block; nearby draws: entertainment district, residential tower; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, entertainment_district, network-hub
+- **Who's there:** Midday audience in Bellwood is mostly students, with a median age of 23.9 and 64.8% aged 18-34; entertainment, university, and residential tower activity is strong.
+- **Audience tags:** students, 18-34, entertainment_district, university, residential_tower
 - **Nearby POIs:** entertainment_district, residential_tower, university
 - **Data confidence:** high
 - **Why this screen (relevance 0.5548):** 65% of local population in target age range (18_34); commuter index 0.52; no nearby POIs match requested type(s): shopping_mall, office_park
@@ -352,8 +360,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0021 (basis: own_history)
 - **Audience reached:** 19,141/day · 133,984/week · 478,515 over the campaign
 - **Standalone reach:** 22,621/day (overlap discount applied: −3,480)
-- **Who's there:** Morning block, roadside/platform panel; serving Fallowfield; value-income area (student skew); ~44,223 riders in this block; nearby draws: university, grocery anchor; network hub adjacency.
-- **Audience tags:** morning, fixed, value-income, student, high-footfall, university, network-hub
+- **Who's there:** Morning riders near Fallowfield are mostly 18 to 34, with a student majority and high footfall around a university and grocery anchor.
+- **Audience tags:** young adults, students, high footfall
 - **Nearby POIs:** university, grocery_anchor, residential_tower
 - **Data confidence:** high
 - **Why this screen (relevance 0.5533):** 66% of local population in target age range (18_34); commuter index 0.51; no nearby POIs match requested type(s): shopping_mall, office_park
@@ -370,8 +378,8 @@ For an awareness push, this package is strong on reach and nearly fully uses bud
 - **Demand:** score 0.0485 (basis: own_history)
 - **Audience reached:** 17,133/day · 119,933/week · 428,331 over the campaign
 - **Standalone reach:** 37,874/day (overlap discount applied: −20,741)
-- **Who's there:** Midday block, roadside/platform panel; serving Bellwood; value-income area (student skew); ~74,043 riders in this block; nearby draws: grocery anchor, shopping mall; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience in Bellwood is mostly students, with a median age of 23.9 and 64.8% aged 18-34; grocery, shopping mall, and university activity is strong.
+- **Audience tags:** students, 18-34, grocery_anchor, shopping_mall, university
 - **Nearby POIs:** grocery_anchor, shopping_mall, university
 - **Data confidence:** high
 - **Why this screen (relevance 0.7183):** 65% of local population in target age range (18_34); commuter index 0.52; nearby shopping_mall POI(s) relevant to campaign

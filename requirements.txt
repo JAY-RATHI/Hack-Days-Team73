@@ -1,1 +1,19 @@
-anthropic
+# AgentIQ — Urban Media Commercial Intelligence Platform
+# Python 3.11+ recommended (developed on 3.12/3.14)
+
+pandas>=2.0
+numpy>=1.24
+
+# LLM: Azure OpenAI (team deployment) -- NOT the anthropic package
+openai>=1.30
+python-dotenv>=1.0
+
+# Campaign brief ingestion (.docx)
+python-docx>=1.1
+
+# UI (D6)
+streamlit>=1.35
+
+# Nicer markdown tables in generated reports (optional -- code falls back
+# to plain text if absent)
+tabulate>=0.9
