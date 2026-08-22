@@ -98,12 +98,25 @@ def _excl_value_tier_high_density_residential(row, feat):
            and occ != "white_collar")
 
 
+def _excl_all_buses(row, feat):
+    # Broader than _excl_bus_rear -- catches phrasing like "not buses" or
+    # "exclude bus screens" (no specific position mentioned), as opposed to
+    # a position-specific exclusion. Distinguished from _excl_bus_rear by
+    # requiring vehicle_type == 'bus' specifically, not just screen_kind ==
+    # 'vehicle' -- a metro rail coach interior screen is NOT a "bus" screen.
+    return row.get("vehicle_type") == "bus"
+
+
 # key: a lowercase phrase fragment to match inside an exclusion_criteria entry
 EXCLUSION_RULES = {
     "bus-rear": _excl_bus_rear,
     "bus rear": _excl_bus_rear,
     "value-tier": _excl_value_tier_high_density_residential,
     "value tier": _excl_value_tier_high_density_residential,
+    "not buses": _excl_all_buses,
+    "no buses": _excl_all_buses,
+    "exclude bus screens": _excl_all_buses,
+    "exclude buses": _excl_all_buses,
 }
 
 
@@ -278,12 +291,20 @@ def score_screens(spec, conn):
     city_id, zone_ids = resolve_geography(spec, zone_demo, cities)
 
     profiles = pd.read_sql("SELECT * FROM screen_audience_profile", conn)
-    geo = pd.read_sql("SELECT screen_id, city_id, zone_id, zone_ids AS zone_ids_json "
-                      "FROM screen_geo_map", conn)
+    geo = pd.read_sql("SELECT screen_id, city_id, zone_id, zone_ids AS zone_ids_json, "
+                      "location_id FROM screen_geo_map", conn)
     # `position` is needed for exclusion rules (e.g. "bus-rear") but isn't in
     # feature_dict -- pull it straight from screens.
-    positions = pd.read_sql("SELECT screen_id, position FROM screens", conn)
-    profiles = profiles.merge(geo, on="screen_id", how="left").merge(positions, on="screen_id", how="left")
+    positions = pd.read_sql("SELECT screen_id, position, vehicle_id FROM screens", conn)
+    vehicle_types = pd.read_sql("SELECT vehicle_id, vehicle_type FROM vehicles", conn)
+    positions = positions.merge(vehicle_types, on="vehicle_id", how="left")
+    # BUGFIX: vehicle_id used to be dropped here, which silently broke the
+    # `vehicle_only` location filter (its check for the column always failed,
+    # so it excluded EVERY screen). Found via campaign_2.docx, which asks for
+    # bus-rear screens on nightlife routes and got zero results.
+    # screen_geo_map also has a vehicle_id; suffix to avoid a silent collision.
+    profiles = profiles.merge(geo, on="screen_id", how="left").merge(
+        positions, on="screen_id", how="left", suffixes=("", "_screens"))
 
     if city_id:
         profiles = profiles[profiles.city_id == city_id]
@@ -300,6 +321,61 @@ def score_screens(spec, conn):
         return pd.DataFrame(), {"city_id": city_id, "zone_ids": zone_ids,
                                 "note": "no screens matched the geography filter"}
 
+    # BUGFIX (found via real feedback-loop testing on campaign_1.docx): this
+    # field existed in CampaignSpec but was NEVER actually enforced anywhere.
+    # A rep's "only use metro platform screens" feedback silently did nothing
+    # -- caught because the narrative LLM honestly noticed the fact sheet
+    # didn't reflect the request, rather than pretending compliance.
+    location_type_pref = spec.get("location_type_preference")
+    if location_type_pref:
+        loc_types = pd.read_sql("SELECT location_id, location_type FROM locations", conn)
+        profiles = profiles.merge(loc_types, on="location_id", how="left")
+
+        # Resolve which column actually holds vehicle_id after the merges
+        # above, instead of assuming a name (the suffix depends on whether
+        # both source frames carried it).
+        veh_col = "vehicle_id" if "vehicle_id" in profiles.columns else (
+            "vehicle_id_screens" if "vehicle_id_screens" in profiles.columns else None)
+
+        if location_type_pref == "metro_only":
+            # "Metro platform" means fixed screens at a metro_station
+            # specifically -- not bus stops, not vehicle-mounted screens.
+            mask = (profiles["location_type"] == "metro_station")
+        elif location_type_pref == "fixed_only":
+            mask = profiles["location_id"].notna()
+        elif location_type_pref == "vehicle_only":
+            mask = profiles[veh_col].notna() if veh_col else pd.Series(True, index=profiles.index)
+        else:
+            mask = pd.Series(True, index=profiles.index)
+
+        before_n = len(profiles)
+        filtered = profiles[mask]
+
+        # SAFETY VALVE: never let a location-type preference wipe out the
+        # ENTIRE pool. A brief expressing a preference ("bus-rear screens on
+        # nightlife routes") should not end up with zero recommendations
+        # because our interpretation of that preference was too narrow --
+        # better to return the unfiltered pool with a loud flag than to
+        # return nothing and blame the brief.
+        if filtered.empty:
+            location_filter_log = {
+                "location_type_preference": location_type_pref,
+                "applied": False,
+                "screens_removed": 0,
+                "warning": (f"'{location_type_pref}' would have excluded ALL "
+                           f"{before_n} candidate screens, so it was NOT applied. "
+                           f"This usually means the preference was mis-extracted or "
+                           f"our interpretation of it is too narrow -- surface this "
+                           f"to the user rather than returning an empty result."),
+            }
+        else:
+            profiles = filtered
+            location_filter_log = {"location_type_preference": location_type_pref,
+                                   "applied": True,
+                                   "screens_removed": before_n - len(profiles)}
+    else:
+        location_filter_log = None
+
     # Apply hard exclusions BEFORE scoring -- an excluded screen shouldn't
     # even be considered, not just ranked low.
     exclusion_criteria = spec.get("exclusion_criteria") or []
@@ -312,9 +388,21 @@ def score_screens(spec, conn):
         profiles = profiles.drop(columns=["_feat", "screen_kind"], errors="ignore")
 
     if profiles.empty:
+        # Report the ACTUAL cause. Previously this always blamed exclusion
+        # criteria, which sent debugging in the wrong direction when the real
+        # cause was the location-type filter (campaign_2.docx).
+        if exclusion_log and any(e.get("screens_removed", 0) > 0 for e in exclusion_log):
+            note = "all screens removed by exclusion criteria -- criteria may be too broad"
+        elif location_filter_log and location_filter_log.get("screens_removed", 0) > 0:
+            note = (f"all screens removed by location_type_preference="
+                    f"'{location_filter_log.get('location_type_preference')}'")
+        else:
+            note = ("no screens remained after filtering, but no single filter "
+                    "reports removing them -- check geography resolution")
         return pd.DataFrame(), {"city_id": city_id, "zone_ids": zone_ids,
                                 "exclusion_log": exclusion_log,
-                                "note": "all screens excluded -- exclusion criteria may be too broad"}
+                                "location_filter_log": location_filter_log,
+                                "note": note}
 
     results = []
     for r in profiles.itertuples(index=False):
@@ -344,7 +432,7 @@ def score_screens(spec, conn):
 
     out = pd.DataFrame(results).sort_values("relevance_score", ascending=False)
     meta = {"city_id": city_id, "zone_ids": zone_ids, "n_screens_scored": len(out),
-            "exclusion_log": exclusion_log}
+            "exclusion_log": exclusion_log, "location_filter_log": location_filter_log}
     return out, meta
 
 
