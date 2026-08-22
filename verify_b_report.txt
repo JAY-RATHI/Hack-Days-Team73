@@ -4,7 +4,7 @@ SECTION 1: Brief parser
 [PASS] parse BRIEF_01_full_spec
     city_hint='Las Hackland'  requires_broad_coverage=False  target_zones_text=['Las Hackland', 'downtown/financial corridor']
 [PASS] parse BRIEF_02_no_budget
-    city_hint='DA Town'  requires_broad_coverage=True  target_zones_text=[]
+    city_hint='DA Town'  requires_broad_coverage=True  target_zones_text=['DA Town']
 [PASS] parse BRIEF_03_vague
     city_hint='Accordionshire'  requires_broad_coverage=False  target_zones_text=[]
 [PASS] no-budget brief -> budget is null, not invented — got budget=None
@@ -30,12 +30,12 @@ SECTION 3: Price bands
 ======================================================================
 SECTION 4: End-to-end merge on sample briefs
 ======================================================================
-[PASS] BRIEF_01_full_spec -> non-empty scored+priced result — 37824 screens, meta={'city_id': 'LH', 'zone_ids': None, 'n_screens_scored': 37824}
-[PASS] BRIEF_01_full_spec -> top reason references real evidence, not generic — 66% of local population in target age range (18_34); commuter index 0.52; matches requested daypart 
-[PASS] BRIEF_02_no_budget -> non-empty scored+priced result — 18738 screens, meta={'city_id': 'DAT', 'zone_ids': None, 'n_screens_scored': 18738}
-[PASS] BRIEF_02_no_budget -> top reason references real evidence, not generic — 66% of local population in target age range (35_54, 55_plus); non-commuter/leisure index 0.61; no ne
-[PASS] BRIEF_03_vague -> non-empty scored+priced result — 10416 screens, meta={'city_id': 'ACS', 'zone_ids': None, 'n_screens_scored': 10416}
-[PASS] BRIEF_03_vague -> top reason references real evidence, not generic — no age target stated; non-commuter/leisure index 0.62; matches requested daypart (evening); no POI a
+[PASS] BRIEF_01_full_spec -> non-empty scored+priced result — 37824 screens, meta={'city_id': 'LH', 'zone_ids': None, 'n_screens_scored': 37824, 'exclusion_log': [], 'location_filter_log': None}
+[PASS] BRIEF_01_full_spec -> top reason references real evidence, not generic — 39% of local population in target age range (18_34); commuter index 0.52; matches requested daypart 
+[PASS] BRIEF_02_no_budget -> non-empty scored+priced result — 18738 screens, meta={'city_id': 'DAT', 'zone_ids': None, 'n_screens_scored': 18738, 'exclusion_log': [], 'location_filter_log': None}
+[PASS] BRIEF_02_no_budget -> top reason references real evidence, not generic — 60% of local population in target age range (35_54, 55_plus); non-commuter/leisure index 0.57; nearb
+[PASS] BRIEF_03_vague -> non-empty scored+priced result — 10416 screens, meta={'city_id': 'ACS', 'zone_ids': None, 'n_screens_scored': 10416, 'exclusion_log': [], 'location_filter_log': None}
+[PASS] BRIEF_03_vague -> top reason references real evidence, not generic — no age target stated; non-commuter/leisure index 0.59; matches requested daypart (evening); nearby e
 
 ======================================================================
 SUMMARY

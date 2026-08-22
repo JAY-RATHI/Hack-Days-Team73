@@ -4,15 +4,19 @@
 
 ## Campaign
 
-- **Objective:** frequency
+- **Objective:** conversion
 - **Target age:** 18–35
 - **Income tier:** None
-- **Audience:** office workers, students, health-conscious, lunch-hour footfall, short lunch window, highly local
+- **Audience:** office workers, students, health-conscious, lunch-hour footfall, local, short lunch window
 - **POI affinities:** office_park, grocery_anchor, entertainment_district
 - **Budget:** 9000.0
 - **Duration:** 15 days
 - **Requested dayparts:** midday
 - **City resolved to:** LH
+
+## Caveats — read these
+
+- Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available.
 
 ## Filters applied
 
@@ -30,11 +34,7 @@
 
 ## Summary for the rep
 
-For a frequency-led buy in LH, this package is a strong fit: 12 unique screens across 12 clusters for 15 days, using 95.1% of the $9,000 budget at a total cost of $8,562.75. The plan is delivering 462,644 projected impressions per day, or 3,238,505 per week, with an average relevance score of 0.857.
-
-The strongest individual options are all midday placements (time block 3). LH-SCR-003222 is the top pick at $49.34 with 45,017 marginal daily impressions, and it hits 85% of the local population in the 18_34 and 35_54 ranges, plus nearby entertainment district POIs. LH-SCR-002837 is nearly as strong at $45.08 and 44,503 impressions, with the same 85% age fit and both grocery anchor and entertainment district POIs. LH-SCR-002699 is the cheapest of the top five at $44.14 and still delivers 42,922 impressions with the same 85% age fit.
-
-One caveat: the walking-distance exclusion for nodes outside a realistic distance of the outlet was not enforced, so flag that to the team before finalizing.
+For a conversion-focused push in LH, this package is strong on midday reach and audience fit: the selected set delivers 462,644 projected impressions per day over 15 days, with 3,238,505 per week, while using 95.1% of the $9,000 budget at a total cost of $8,562.75. The best-fit screens are the midday time block 3 placements with 85% of local population in the 18_34 and 35_54 target range, a commuter index of 0.52, and nearby POIs that support conversion intent. The top options by marginal daily impressions are LH-SCR-003222 at 45,017 for $49.34, LH-SCR-002837 at 44,503 for $45.08, and LH-SCR-002699 at 42,922 for $44.14. LH-SCR-005502 is weaker on audience fit at 53% in the target age range but still brings 41,676 impressions for $46.22. LH-SCR-004542 adds both entertainment_district and grocery_anchor context with 40,771 impressions for $48.06. One important caveat: the walking-distance exclusion was not enforced, so nodes outside a realistic walking distance of the outlet may still be included. Also, availability was not checked because no start date was provided, so all candidates were assumed available.
 
 ---
 
@@ -51,8 +51,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.0976 (basis: own_history)
 - **Audience reached:** 45,017/day · 315,119/week · 675,254 over the campaign
 - **Standalone reach:** 45,017/day (overlap discount applied: −0)
-- **Who's there:** Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~88,007 riders in this block; nearby draws: entertainment district, residential tower; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, entertainment_district, network-hub
+- **Who's there:** Midday audience in Uptown Crescent with high footfall, centered on entertainment, university, residential tower, and shopping mall sites; median age 28.1 and students dominate.
+- **Audience tags:** entertainment_district, university, residential_tower, shopping_mall, student
 - **Nearby POIs:** entertainment_district, residential_tower, university
 - **Data confidence:** high
 - **Why this screen (relevance 0.8832):** 85% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (midday); nearby entertainment_district POI(s) relevant to campaign
@@ -69,8 +69,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.0212 (basis: own_history)
 - **Audience reached:** 44,503/day · 311,519/week · 667,541 over the campaign
 - **Standalone reach:** 44,503/day (overlap discount applied: −0)
-- **Who's there:** Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~87,002 riders in this block; nearby draws: grocery anchor, university; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience in Uptown Crescent is mostly 18 to 34, student-led, with nearby university, grocery, shopping, and entertainment places.
+- **Audience tags:** 18_34, student, university, grocery_anchor, shopping_mall, entertainment_district
 - **Nearby POIs:** grocery_anchor, university, entertainment_district
 - **Data confidence:** high
 - **Why this screen (relevance 0.9157):** 85% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (midday); nearby grocery_anchor, entertainment_district POI(s) relevant to campaign
@@ -87,8 +87,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.0964 (basis: own_history)
 - **Audience reached:** 42,922/day · 300,452/week · 643,825 over the campaign
 - **Standalone reach:** 45,987/day (overlap discount applied: −3,065)
-- **Who's there:** Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~89,903 riders in this block; nearby draws: university, grocery anchor; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, university, network-hub
+- **Who's there:** Midday audience in Uptown Crescent is mostly 18 to 34, student-led, with nearby university, grocery, shopping, and residential places.
+- **Audience tags:** 18_34, student, university, grocery_anchor, shopping_mall, residential_tower
 - **Nearby POIs:** university, grocery_anchor, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.8062):** 85% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (midday); nearby grocery_anchor POI(s) relevant to campaign
@@ -105,8 +105,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.037 (basis: own_history)
 - **Audience reached:** 41,676/day · 291,730/week · 625,135 over the campaign
 - **Standalone reach:** 41,676/day (overlap discount applied: −0)
-- **Who's there:** Midday block, roadside/platform panel; serving Old Mill District; value-income area (blue_collar skew); ~81,475 riders in this block; nearby draws: grocery anchor, hospital; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, blue_collar, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience near a hospital, government building, grocery anchor, and residential tower; blue-collar dominated, with high footfall and area averages used.
+- **Audience tags:** hospital, government_building, grocery_anchor, residential_tower, blue_collar, high_footfall, area_average
 - **Nearby POIs:** grocery_anchor, hospital, government_building
 - **Data confidence:** high
 - **Why this screen (relevance 0.8043):** 53% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (midday); nearby grocery_anchor POI(s) relevant to campaign
@@ -123,8 +123,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.0182 (basis: own_history)
 - **Audience reached:** 40,771/day · 285,399/week · 611,570 over the campaign
 - **Standalone reach:** 43,683/day (overlap discount applied: −2,911)
-- **Who's there:** Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~85,399 riders in this block; nearby draws: university, entertainment district; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, university, network-hub
+- **Who's there:** Midday audience in Uptown Crescent with high footfall, centered on university, entertainment, grocery, and shopping mall sites; median age 28.1 and students dominate.
+- **Audience tags:** university, entertainment_district, grocery_anchor, shopping_mall, student
 - **Nearby POIs:** university, entertainment_district, grocery_anchor
 - **Data confidence:** high
 - **Why this screen (relevance 0.8575):** 85% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (midday); nearby entertainment_district, grocery_anchor POI(s) relevant to campaign
@@ -141,8 +141,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.0257 (basis: own_history)
 - **Audience reached:** 36,994/day · 258,956/week · 554,905 over the campaign
 - **Standalone reach:** 40,574/day (overlap discount applied: −3,581)
-- **Who's there:** Midday block, roadside/platform panel; serving North Terminus; value-income area (mixed skew); ~79,322 riders in this block; nearby draws: tourist landmark, entertainment district; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, mixed, high-footfall, tourist_landmark, network-hub
+- **Who's there:** Midday audience near a tourist landmark, shopping mall, entertainment district, and residential tower; older than average, with mixed occupations and high footfall.
+- **Audience tags:** tourist_landmark, shopping_mall, entertainment_district, residential_tower, mixed, high_footfall
 - **Nearby POIs:** tourist_landmark, entertainment_district, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.7072):** 48% of local population in target age range (18_34, 35_54); commuter index 0.51; matches requested daypart (midday); nearby entertainment_district POI(s) relevant to campaign
@@ -159,8 +159,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.0317 (basis: own_history)
 - **Audience reached:** 36,830/day · 257,808/week · 552,445 over the campaign
 - **Standalone reach:** 40,394/day (overlap discount applied: −3,565)
-- **Who's there:** Midday block, roadside/platform panel; serving Harborfront; mid-income area (mixed skew); ~78,971 riders in this block; nearby draws: entertainment district, residential tower; network hub adjacency.
-- **Audience tags:** midday, fixed, mid-income, mixed, high-footfall, entertainment_district, network-hub
+- **Who's there:** Midday audience in Harborfront with high footfall, centered on entertainment, residential tower, shopping mall, and university sites; median age 44.7 and mixed occupations are common.
+- **Audience tags:** entertainment_district, residential_tower, shopping_mall, university, mixed
 - **Nearby POIs:** entertainment_district, residential_tower, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.8958):** 57% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (midday); nearby entertainment_district POI(s) relevant to campaign
@@ -177,8 +177,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.0923 (basis: own_history)
 - **Audience reached:** 36,080/day · 252,561/week · 541,202 over the campaign
 - **Standalone reach:** 39,484/day (overlap discount applied: −3,403)
-- **Who's there:** Midday block, roadside/platform panel; serving East Commons; mid-income area (mixed skew); ~77,190 riders in this block; nearby draws: grocery anchor, hospital; network hub adjacency.
-- **Audience tags:** midday, fixed, mid-income, mixed, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience near a hospital, entertainment district, grocery anchor, and office park; mixed occupations, with high footfall and area averages used.
+- **Audience tags:** hospital, entertainment_district, grocery_anchor, office_park, mixed, high_footfall, area_average
 - **Nearby POIs:** grocery_anchor, hospital, entertainment_district
 - **Data confidence:** high
 - **Why this screen (relevance 0.9014):** 58% of local population in target age range (18_34, 35_54); commuter index 0.53; matches requested daypart (midday); nearby entertainment_district, grocery_anchor, office_park POI(s) relevant to campaign
@@ -195,8 +195,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.0411 (basis: own_history)
 - **Audience reached:** 35,793/day · 250,550/week · 536,892 over the campaign
 - **Standalone reach:** 37,898/day (overlap discount applied: −2,105)
-- **Who's there:** Midday block, roadside/platform panel; serving Market Quarter; mid-income area (retail_service skew); ~74,090 riders in this block; nearby draws: grocery anchor, residential tower; network hub adjacency.
-- **Audience tags:** midday, fixed, mid-income, retail_service, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience near residential tower, grocery anchor, shopping mall, and government building; younger than average, retail service dominated, with high footfall.
+- **Audience tags:** residential_tower, grocery_anchor, shopping_mall, government_building, retail_service, high_footfall
 - **Nearby POIs:** grocery_anchor, residential_tower, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.8746):** 63% of local population in target age range (18_34, 35_54); commuter index 0.53; matches requested daypart (midday); nearby grocery_anchor POI(s) relevant to campaign
@@ -213,8 +213,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.0551 (basis: own_history)
 - **Audience reached:** 34,996/day · 244,975/week · 524,946 over the campaign
 - **Standalone reach:** 38,384/day (overlap discount applied: −3,387)
-- **Who's there:** Midday block, roadside/platform panel; serving Old Mill District; value-income area (blue_collar skew); ~75,040 riders in this block; nearby draws: grocery anchor, hospital; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, blue_collar, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience near a grocery anchor, hospital, shopping mall, and government building; blue-collar dominated, with high footfall and area averages used.
+- **Audience tags:** grocery_anchor, hospital, shopping_mall, government_building, blue_collar, high_footfall, area_average
 - **Nearby POIs:** grocery_anchor, hospital, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.8467):** 53% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (midday); nearby grocery_anchor POI(s) relevant to campaign
@@ -231,8 +231,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.0339 (basis: own_history)
 - **Audience reached:** 34,360/day · 240,520/week · 515,399 over the campaign
 - **Standalone reach:** 36,814/day (overlap discount applied: −2,454)
-- **Who's there:** Midday block, roadside/platform panel; serving Old Mill District; value-income area (blue_collar skew); ~71,970 riders in this block; nearby draws: entertainment district, government building; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, blue_collar, high-footfall, entertainment_district, network-hub
+- **Who's there:** Midday audience in Old Mill District with high footfall, centered on entertainment, government, hospital, and residential tower sites; median age 43.3 and blue-collar workers dominate.
+- **Audience tags:** entertainment_district, government_building, hospital, residential_tower, blue_collar
 - **Nearby POIs:** entertainment_district, government_building, hospital
 - **Data confidence:** high
 - **Why this screen (relevance 0.8702):** 53% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (midday); nearby entertainment_district POI(s) relevant to campaign
@@ -249,8 +249,8 @@ One caveat: the walking-distance exclusion for nodes outside a realistic distanc
 - **Demand:** score 0.0196 (basis: own_history)
 - **Audience reached:** 32,703/day · 228,918/week · 490,538 over the campaign
 - **Standalone reach:** 34,485/day (overlap discount applied: −1,783)
-- **Who's there:** Midday block, roadside/platform panel; serving Market Quarter; mid-income area (retail_service skew); ~67,418 riders in this block; nearby draws: grocery anchor, entertainment district; network hub adjacency.
-- **Audience tags:** midday, fixed, mid-income, retail_service, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience in Market Quarter with high footfall, centered on grocery, shopping, entertainment, and government sites; median age 34.7 and retail service workers are dominant.
+- **Audience tags:** grocery_anchor, entertainment_district, shopping_mall, government_building, retail_service
 - **Nearby POIs:** grocery_anchor, entertainment_district, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.9181):** 63% of local population in target age range (18_34, 35_54); commuter index 0.53; matches requested daypart (midday); nearby grocery_anchor, entertainment_district POI(s) relevant to campaign

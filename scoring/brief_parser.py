@@ -66,7 +66,8 @@ Return ONLY valid JSON, no other text, matching exactly this shape:
   "requires_broad_coverage": <true if brief explicitly says "not tied to one area" / "broad" / "citywide", else false>,
   "exclusion_criteria": ["<verbatim or near-verbatim exclusion clauses, e.g. 'exclude bus-rear screens', 'exclude high-density residential value-tier inventory' -- empty list if none stated>"],
   "location_type_preference": "<'metro_only'|'fixed_only'|'vehicle_only'|null -- ONLY if the brief is explicit that ONE inventory type should be used exclusively, e.g. 'metro platform boards' as the ENTIRE focus. If the brief lists multiple screen types (as most will), use null -- don't over-constrain from one example type.>",
-  "rotation_slots_per_day": <int or null -- ONLY if a specific slot count is stated, e.g. "1 rotating slot" -> 1>
+  "rotation_slots_per_day": <int or null -- ONLY if a specific slot count is stated, e.g. "1 rotating slot" -> 1>,
+  "start_date": "<ISO date string YYYY-MM-DD, or null. ONLY if a specific start date is stated or precisely computable (e.g. 'starting March 1, 2027' -> '2027-03-01'). A vague window like 'Q1 2027' or 'pre-monsoon' is NOT a date -- use null.>"
 }}
 
 RULES:
@@ -150,6 +151,15 @@ def parse_brief(brief_text: str, poi_vocab=None) -> dict:
             spec["duration_days"] = int(spec["duration_days"])
         except (TypeError, ValueError):
             spec["duration_days"] = None
+    if spec.get("start_date"):
+        from datetime import datetime
+        try:
+            datetime.strptime(str(spec["start_date"])[:10], "%Y-%m-%d")
+            spec["start_date"] = str(spec["start_date"])[:10]
+        except (TypeError, ValueError):
+            spec["start_date"] = None
+    else:
+        spec["start_date"] = None
 
     spec["raw_brief_text"] = brief_text
     return spec

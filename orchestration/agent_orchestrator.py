@@ -46,10 +46,18 @@ from scoring.brief_parser import parse_brief
 from pricing.merge_scored_priced import build_scored_priced_screens
 from optimization.impressions_optimizer import optimize_package
 
+
+def DB_PATH_FOR_ENRICH(conn):
+    """Resolve the file path of an open sqlite3 connection (PRAGMA
+    database_list), so enrichment always targets the SAME database the
+    pipeline is reading -- critical when URBAN_DB points at a test db."""
+    row = conn.execute("PRAGMA database_list").fetchone()
+    return row[2] if row else "db/urban_media.db"
+
 SCALAR_FEEDBACK_FIELDS = [
     "city_hint", "target_age_min", "target_age_max", "target_income_tier",
     "objective", "budget", "duration_days", "requires_broad_coverage",
-    "location_type_preference", "rotation_slots_per_day",
+    "location_type_preference", "rotation_slots_per_day", "start_date",
 ]
 LIST_FEEDBACK_FIELDS = [
     "target_zones_text", "audience_descriptors", "poi_affinities",
@@ -142,6 +150,20 @@ def run_campaign(conn, brief_text=None, brief_docx_path=None, spec=None, poi_voc
             "narrative": ("Screens matched this campaign's audience, but none fit within "
                          f"the stated budget. {summary.get('note', '')}"),
         }
+
+    # D1's "Leverage AI to infer profiles": polish the audience prose for
+    # EXACTLY the screens in the final package (Layer 2 of the two-layer
+    # design -- ~1 API call, cached forever via profile_source='llm').
+    # Guarded so an LLM hiccup NEVER blocks the pipeline: the rule-based
+    # Layer-1 text is always already in the table as a valid fallback.
+    try:
+        from features.enrich_profiles_llm import enrich
+        for tb, grp in package.groupby("time_block_id"):
+            enrich(grp.screen_id.unique().tolist(), time_block_id=int(tb),
+                   db_path=getattr(conn, "_db_path", None) or DB_PATH_FOR_ENRICH(conn))
+    except Exception as e:
+        print(f"  (profile enrichment skipped: {type(e).__name__}: {e} -- "
+              f"rule-based profile text remains in place)")
 
     narrative = generate_narrative(spec, meta, package, summary)
     return {

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AgentIQ — C4 Model — Hack Days 2026 Team 73</title>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'neutral', flowchart: { htmlLabels: true } });
+</script>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+         color: #525965; max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+  h1, h2 { color: #1F242F; }
+  h1 { border-bottom: 4px solid #EEFB87; padding-bottom: .4rem; }
+  .note { background: #F2F4F9; padding: .8rem 1rem; margin: 1rem 0; font-size: .95rem; }
+  .mermaid { background: #fff; margin: 1.5rem 0; }
+  @media print { .noprint { display: none; } }
+</style>
+</head>
+<body>
+
+<h1>AgentIQ — system design (C4 model)</h1>
+<p class="note noprint">Open this file in a browser (diagrams render via
+mermaid.js from CDN — needs internet once). <b>Print → Save as PDF</b> for
+the submission export.</p>
+
+<h2>Level 1 — System context</h2>
+<p>Who uses the system and what it talks to. One human role, one core
+system, two external dependencies.</p>
+<pre class="mermaid">
+flowchart LR
+    rep(["Sales Rep<br/><i>Urban Media, 50-person team</i>"])
+    advertiser(["Advertiser / Client<br/><i>sends campaign briefs</i>"])
+    subgraph boundary["Urban Media"]
+        agentiq["<b>AgentIQ</b><br/>Commercial intelligence platform:<br/>brief → screens, slots, pricing,<br/>reach, reasoning"]
+        data[("Urban Media dataset<br/>14 tables · SQLite<br/>screens, routes, ridership,<br/>bookings, leads, POIs")]
+    end
+    azure["Azure OpenAI<br/><i>gpt-5.4 nano + mini deployments</i>"]
+
+    advertiser -- "campaign brief (.docx / text)" --> rep
+    rep -- "uploads brief, gives feedback,<br/>exports recommendation" --> agentiq
+    agentiq -- "reads inventory, history,<br/>demand signals" --> data
+    agentiq -- "brief parsing · profile prose ·<br/>final narrative (grounded)" --> azure
+</pre>
+
+<h2>Level 2 — Containers</h2>
+<p>The deployable/runnable pieces and how data flows between them. Solid
+arrows are the per-campaign request path; dashed arrows are the one-time
+offline data build.</p>
+<pre class="mermaid">
+flowchart TB
+    rep(["Sales Rep"])
+    subgraph agentiq["AgentIQ"]
+        ui["<b>Streamlit UI (D6)</b><br/>app/app.py + backend_adapter.py<br/>upload/pick/paste brief · caveat & filter<br/>display · feedback loop · md/json export"]
+        orch["<b>Orchestrator (D5)</b><br/>orchestration/agent_orchestrator.py<br/>one call in → complete result out ·<br/>merges rep feedback (union) · grounded narrative"]
+        scoring["<b>Scoring service (D2)</b><br/>scoring/*<br/>LLM brief parser (temp 0, vocab-constrained)<br/>+ rule-based relevance + hard filters"]
+        pricing["<b>Pricing service (D3)</b><br/>pricing/*<br/>demand index (bookings/leads/events decay)<br/>+ floor/target/cap bands + merge"]
+        optim["<b>Optimizer (D4)</b><br/>optimization/*<br/>greedy joint selection · budget · slot<br/>availability · overlap de-duplication"]
+        pipeline["<b>Data pipeline (D1, offline)</b><br/>db/load.py + features/*<br/>14 CSVs → profiles, clusters,<br/>ridership aggregates"]
+        db[("SQLite<br/>db/urban_media.db<br/>14 raw + 6 derived tables")]
+    end
+    azure["Azure OpenAI"]
+
+    rep --> ui
+    ui --> orch
+    orch --> scoring --> pricing --> optim --> orch
+    scoring <--> db
+    pricing <--> db
+    optim <--> db
+    scoring -. "parse brief (CHAT_FAST)" .-> azure
+    orch -. "narrative + profile polish<br/>(CHAT_CAPABLE)" .-> azure
+    pipeline -. "one-time build" .-> db
+</pre>
+
+<h2>Level 3 — Components (inside the request path)</h2>
+<p>What actually happens to one campaign brief, component by component.</p>
+<pre class="mermaid">
+flowchart TB
+    brief["Campaign brief<br/>.docx or pasted text"]
+    subgraph d2["Scoring (D2)"]
+        loader["load_brief_docx<br/>python-docx, document-order extraction"]
+        parser["brief_parser<br/>Azure OpenAI · temperature=0 ·<br/>poi vocab injected · guardrails ·<br/>deterministic city fallback"]
+        geo["geography resolver<br/>city + zone matching ·<br/>broad-coverage keeps city filter"]
+        excl["exclusion engine<br/>EXCLUSION_RULES registry ·<br/>unmatched phrases logged NOT-enforced"]
+        loc["location-type filter<br/>metro/fixed/vehicle_only ·<br/>safety valve: never empties the pool"]
+        scorer["relevance scorer<br/>0.4 age fit + 0.3 commuter/daypart<br/>+ 0.3 POI match · low-confidence penalty ·<br/>evidence-citing reason strings"]
+    end
+    subgraph d3["Pricing (D3)"]
+        demand["demand index<br/>booking density (exp decay) + lead<br/>pressure (recency, price-rejection damped)<br/>+ event boost · cold-start: own → cluster → city"]
+        bands["price bands<br/>p10 floor by own/cluster/tier history ·<br/>target = f(demand) · cap pulled down by<br/>real rejected quotes"]
+        merge["scored_priced merge<br/>per-campaign · combined_rank"]
+    end
+    subgraph d4["Optimizer (D4)"]
+        avail["availability check<br/>6-slot rotation capacity vs existing<br/>bookings in campaign window ·<br/>skipped loudly if no start date"]
+        impress["impressions model<br/>daily riders (kind-normalized) ×<br/>attention × saturating slot curve"]
+        greedy["greedy joint selector<br/>efficiency = relevance × marginal ÷ cost ·<br/>cluster decay 0.5ⁿ + corridor Jaccard<br/>discount · pre-filter top-500 · early stop"]
+    end
+    subgraph d5["Orchestrator (D5)"]
+        enrich["profile enrichment<br/>LLM polish, package screens only,<br/>cached, failure-isolated"]
+        narrative["narrative generator<br/>fact-sheet grounded ·<br/>flags unmet constraints honestly"]
+        feedback["feedback merger<br/>rep note re-parsed · scalars override,<br/>lists UNION · full re-run"]
+    end
+    profiles[("screen_audience_profile<br/>66,978 rows · D1")]
+    result["Complete recommendation<br/>screens · slots · price bands ·<br/>deduped reach · reasons · caveats"]
+
+    brief --> loader --> parser --> geo --> excl --> loc --> scorer
+    profiles --> scorer
+    scorer --> demand --> bands --> merge --> avail --> impress --> greedy
+    greedy --> enrich --> narrative --> result
+    result -. "rep's follow-up note" .-> feedback -.-> geo
+</pre>
+
+<h2>Key architectural decisions</h2>
+<ul>
+  <li><b>LLM for language, code for math.</b> LLMs parse briefs and write
+      prose from exact fact sheets; every score, price, and impression is
+      deterministic Python/SQL. No number in any output is model-generated.</li>
+  <li><b>Two-layer profiles.</b> All 66,978 profiles are rule-based and free;
+      LLM polish runs only for the ~15 screens in a final package (cached) —
+      1 API call instead of ~1,675.</li>
+  <li><b>Honest failure modes.</b> Missing budget/duration/date → explicit
+      unconstrained/per-day/unchecked behavior with caveats. Filters that
+      would empty the pool are skipped with warnings, never silently applied
+      or silently dropped.</li>
+  <li><b>Overlap-aware reach.</b> Hard clusters (same stop/corridor) decay at
+      0.5ⁿ; soft corridor overlap (stop-set Jaccard) discounts further.
+      Reports show standalone vs marginal per screen.</li>
+  <li><b>Scale-tested.</b> Greedy selection pre-filters to top-500 by raw
+      efficiency with an early budget stop — 0.04s at 37K candidates (was
+      2+ hours before the fix). Full runs verified on all 6 real briefs.</li>
+</ul>
+
+</body>
+</html>

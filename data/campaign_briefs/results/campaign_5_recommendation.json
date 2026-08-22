@@ -10,13 +10,14 @@
       ],
       "income_tier": "high",
       "descriptors": [
-        "Frequent flyers",
+        "frequent flyers",
         "business travelers",
         "leisure travelers",
         "frequent business travellers",
         "higher-income leisure travelers",
         "planning trips well in advance",
-        "daily commute"
+        "daily commute",
+        "in a travel mindset"
       ],
       "poi_affinities": [
         "office_park",
@@ -42,6 +43,10 @@
   "filters_applied": {
     "exclusions": [],
     "location_type": null,
+    "availability": {
+      "checked": false,
+      "note": "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
+    },
     "candidates_scored": 37824
   },
   "package_totals": {
@@ -55,9 +60,16 @@
     "cost_basis": "total_campaign",
     "total_projected_impressions_per_day": 650352.0,
     "total_projected_impressions_per_week": 4552467.0,
-    "avg_relevance_score_selected": 0.722
+    "avg_relevance_score_selected": 0.722,
+    "availability": {
+      "checked": false,
+      "note": "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
+    },
+    "caveat_availability": "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
   },
-  "caveats": [],
+  "caveats": [
+    "Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available."
+  ],
   "recommended_screens": [
     {
       "rank": 3715,
@@ -88,18 +100,18 @@
         "time_block_id": 5,
         "hours": "16:00-20:00",
         "daypart": "evening",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Evening block, roadside/platform panel; serving North Terminus; value-income area (mixed skew); ~93,262 riders in this block; nearby draws: tourist landmark, entertainment district; network hub adjacency.",
+        "profile": "Evening audience in North Terminus is older, with mixed occupation and nearby tourist landmark, entertainment district, shopping mall, and residential tower.",
         "tags": [
-          "evening",
-          "fixed",
-          "value-income",
-          "mixed",
-          "high-footfall",
+          "older",
+          "mixed_occupation",
           "tourist_landmark",
-          "network-hub"
+          "entertainment_district",
+          "shopping_mall",
+          "residential_tower"
         ],
         "riders_in_block": 93262.9,
         "daily_riders_exposed": 93263.0,
@@ -167,18 +179,18 @@
         "time_block_id": 5,
         "hours": "16:00-20:00",
         "daypart": "evening",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Evening block, roadside/platform panel; serving Harborfront; mid-income area (mixed skew); ~92,553 riders in this block; nearby draws: office park, grocery anchor; network hub adjacency.",
+        "profile": "Evening audience in Harborfront is mixed-age, with a median age of 44.7, high footfall, and nearby office, grocery, entertainment, and tourist activity.",
         "tags": [
-          "evening",
-          "fixed",
-          "mid-income",
-          "mixed",
-          "high-footfall",
-          "office_park",
-          "network-hub"
+          "mixed-age",
+          "high footfall",
+          "office",
+          "grocery",
+          "entertainment",
+          "tourist"
         ],
         "riders_in_block": 92553.8,
         "daily_riders_exposed": 92554.0,
@@ -246,18 +258,18 @@
         "time_block_id": 5,
         "hours": "16:00-20:00",
         "daypart": "evening",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Evening block, roadside/platform panel; serving Riverside Junction; mid-income area (mixed skew); ~89,301 riders in this block; nearby draws: office park, shopping mall; network hub adjacency.",
+        "profile": "Evening audience in Riverside Junction is younger, with a median age of 34.3, high density, and nearby office, shopping, grocery, and entertainment activity.",
         "tags": [
-          "evening",
-          "fixed",
-          "mid-income",
-          "mixed",
-          "high-footfall",
-          "office_park",
-          "network-hub"
+          "younger adults",
+          "high density",
+          "office",
+          "shopping",
+          "grocery",
+          "entertainment"
         ],
         "riders_in_block": 89301.0,
         "daily_riders_exposed": 89301.0,
@@ -325,18 +337,18 @@
         "time_block_id": 5,
         "hours": "16:00-20:00",
         "daypart": "evening",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Evening block, roadside/platform panel; serving Riverside Junction; mid-income area (mixed skew); ~89,112 riders in this block; nearby draws: hospital, tourist landmark; network hub adjacency.",
+        "profile": "Evening audience in Riverside Junction is younger, with a median age of 34.3, high density, and nearby hospital, tourist, entertainment, and grocery activity.",
         "tags": [
-          "evening",
-          "fixed",
-          "mid-income",
-          "mixed",
-          "high-footfall",
+          "younger adults",
+          "high density",
           "hospital",
-          "network-hub"
+          "tourist",
+          "entertainment",
+          "grocery"
         ],
         "riders_in_block": 89112.6,
         "daily_riders_exposed": 89113.0,
@@ -404,18 +416,18 @@
         "time_block_id": 5,
         "hours": "16:00-20:00",
         "daypart": "evening",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Evening block, roadside/platform panel; serving North Terminus; value-income area (mixed skew); ~88,327 riders in this block; nearby draws: office park, residential tower; network hub adjacency.",
+        "profile": "Evening audience in North Terminus is mixed-age, with a median age of 47.1, moderate commuter flow, and nearby shopping, office, residential, and tourist activity.",
         "tags": [
-          "evening",
-          "fixed",
-          "value-income",
-          "mixed",
-          "high-footfall",
-          "office_park",
-          "network-hub"
+          "mixed-age",
+          "commuters",
+          "shopping",
+          "office",
+          "residential",
+          "tourist"
         ],
         "riders_in_block": 88327.9,
         "daily_riders_exposed": 88328.0,
@@ -483,18 +495,18 @@
         "time_block_id": 3,
         "hours": "08:00-12:00",
         "daypart": "midday",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~87,002 riders in this block; nearby draws: grocery anchor, university; network hub adjacency.",
+        "profile": "Midday audience in Uptown Crescent is mostly 18 to 34, student-led, with nearby university, grocery, shopping, and entertainment places.",
         "tags": [
-          "midday",
-          "fixed",
-          "value-income",
+          "18_34",
           "student",
-          "high-footfall",
+          "university",
           "grocery_anchor",
-          "network-hub"
+          "shopping_mall",
+          "entertainment_district"
         ],
         "riders_in_block": 87002.7,
         "daily_riders_exposed": 87003.0,
@@ -562,18 +574,18 @@
         "time_block_id": 3,
         "hours": "08:00-12:00",
         "daypart": "midday",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Midday block, roadside/platform panel; serving North Terminus; value-income area (mixed skew); ~83,031 riders in this block; nearby draws: tourist landmark, residential tower; network hub adjacency.",
+        "profile": "Midday audience near residential tower, tourist landmark, office park, and hospital; older than average, with mixed occupations and high footfall.",
         "tags": [
-          "midday",
-          "fixed",
-          "value-income",
-          "mixed",
-          "high-footfall",
+          "residential_tower",
           "tourist_landmark",
-          "network-hub"
+          "office_park",
+          "hospital",
+          "mixed",
+          "high_footfall"
         ],
         "riders_in_block": 83031.6,
         "daily_riders_exposed": 83032.0,
@@ -641,18 +653,17 @@
         "time_block_id": 3,
         "hours": "08:00-12:00",
         "daypart": "midday",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~88,007 riders in this block; nearby draws: entertainment district, residential tower; network hub adjacency.",
+        "profile": "Midday audience in Uptown Crescent with high footfall, centered on entertainment, university, residential tower, and shopping mall sites; median age 28.1 and students dominate.",
         "tags": [
-          "midday",
-          "fixed",
-          "value-income",
-          "student",
-          "high-footfall",
           "entertainment_district",
-          "network-hub"
+          "university",
+          "residential_tower",
+          "shopping_mall",
+          "student"
         ],
         "riders_in_block": 88007.9,
         "daily_riders_exposed": 88008.0,
@@ -720,18 +731,18 @@
         "time_block_id": 3,
         "hours": "08:00-12:00",
         "daypart": "midday",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Midday block, roadside/platform panel; serving Downtown Core; high-income area (white_collar skew); ~87,885 riders in this block; nearby draws: hotel convention, corporate campus; network hub adjacency.",
+        "profile": "Midday at Downtown Core, this screen reaches a dense, high-footfall audience with a median age of 32.6, mostly white-collar, and 64.9% bachelor\u2019s or higher.",
         "tags": [
-          "midday",
-          "fixed",
-          "high-income",
-          "white_collar",
-          "high-footfall",
-          "hotel_convention",
-          "network-hub"
+          "Downtown Core",
+          "high footfall",
+          "white collar",
+          "age 32.6",
+          "income index 141.7",
+          "bachelor's or higher 64.9%"
         ],
         "riders_in_block": 87885.4,
         "daily_riders_exposed": 87885.0,
@@ -799,18 +810,18 @@
         "time_block_id": 3,
         "hours": "08:00-12:00",
         "daypart": "midday",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~89,903 riders in this block; nearby draws: university, grocery anchor; network hub adjacency.",
+        "profile": "Midday audience in Uptown Crescent is mostly 18 to 34, student-led, with nearby university, grocery, shopping, and residential places.",
         "tags": [
-          "midday",
-          "fixed",
-          "value-income",
+          "18_34",
           "student",
-          "high-footfall",
           "university",
-          "network-hub"
+          "grocery_anchor",
+          "shopping_mall",
+          "residential_tower"
         ],
         "riders_in_block": 89903.7,
         "daily_riders_exposed": 89904.0,
@@ -878,18 +889,19 @@
         "time_block_id": 3,
         "hours": "08:00-12:00",
         "daypart": "midday",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Midday block, roadside/platform panel; serving Old Mill District; value-income area (blue_collar skew); ~81,475 riders in this block; nearby draws: grocery anchor, hospital; network hub adjacency.",
+        "profile": "Midday audience near a hospital, government building, grocery anchor, and residential tower; blue-collar dominated, with high footfall and area averages used.",
         "tags": [
-          "midday",
-          "fixed",
-          "value-income",
-          "blue_collar",
-          "high-footfall",
+          "hospital",
+          "government_building",
           "grocery_anchor",
-          "network-hub"
+          "residential_tower",
+          "blue_collar",
+          "high_footfall",
+          "area_average"
         ],
         "riders_in_block": 81475.8,
         "daily_riders_exposed": 81476.0,
@@ -957,18 +969,17 @@
         "time_block_id": 3,
         "hours": "08:00-12:00",
         "daypart": "midday",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~85,399 riders in this block; nearby draws: university, entertainment district; network hub adjacency.",
+        "profile": "Midday audience in Uptown Crescent with high footfall, centered on university, entertainment, grocery, and shopping mall sites; median age 28.1 and students dominate.",
         "tags": [
-          "midday",
-          "fixed",
-          "value-income",
-          "student",
-          "high-footfall",
           "university",
-          "network-hub"
+          "entertainment_district",
+          "grocery_anchor",
+          "shopping_mall",
+          "student"
         ],
         "riders_in_block": 85399.7,
         "daily_riders_exposed": 85400.0,
@@ -1036,18 +1047,18 @@
         "time_block_id": 3,
         "hours": "08:00-12:00",
         "daypart": "midday",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Midday block, roadside/platform panel; serving Harborfront; mid-income area (mixed skew); ~80,358 riders in this block; nearby draws: office park, grocery anchor; network hub adjacency.",
+        "profile": "Midday audience near a hospital, grocery anchor, office park, and residential tower; higher income, more educated, with mixed occupations and high footfall.",
         "tags": [
-          "midday",
-          "fixed",
-          "mid-income",
-          "mixed",
-          "high-footfall",
+          "hospital",
+          "grocery_anchor",
           "office_park",
-          "network-hub"
+          "residential_tower",
+          "mixed",
+          "high_footfall"
         ],
         "riders_in_block": 80358.6,
         "daily_riders_exposed": 80359.0,
@@ -1115,18 +1126,19 @@
         "time_block_id": 3,
         "hours": "08:00-12:00",
         "daypart": "midday",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Midday block, roadside/platform panel; serving Old Mill District; value-income area (blue_collar skew); ~75,040 riders in this block; nearby draws: grocery anchor, hospital; network hub adjacency.",
+        "profile": "Midday audience near a grocery anchor, hospital, shopping mall, and government building; blue-collar dominated, with high footfall and area averages used.",
         "tags": [
-          "midday",
-          "fixed",
-          "value-income",
-          "blue_collar",
-          "high-footfall",
           "grocery_anchor",
-          "network-hub"
+          "hospital",
+          "shopping_mall",
+          "government_building",
+          "blue_collar",
+          "high_footfall",
+          "area_average"
         ],
         "riders_in_block": 75040.1,
         "daily_riders_exposed": 75040.0,
@@ -1194,18 +1206,20 @@
         "time_block_id": 3,
         "hours": "08:00-12:00",
         "daypart": "midday",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Midday block, roadside/platform panel; serving North Terminus; value-income area (mixed skew); ~71,312 riders in this block; nearby draws: entertainment district, tourist landmark; network hub adjacency.",
+        "profile": "Midday at North Terminus, this screen reaches a high-footfall audience with a median age of 47.1, mixed occupations, and nearby entertainment, tourism, shopping, and government activity.",
         "tags": [
-          "midday",
-          "fixed",
-          "value-income",
-          "mixed",
-          "high-footfall",
-          "entertainment_district",
-          "network-hub"
+          "North Terminus",
+          "high footfall",
+          "mixed occupation",
+          "age 47.1",
+          "entertainment district",
+          "tourist landmark",
+          "shopping mall",
+          "government building"
         ],
         "riders_in_block": 71312.0,
         "daily_riders_exposed": 71312.0,
@@ -1273,18 +1287,18 @@
         "time_block_id": 3,
         "hours": "08:00-12:00",
         "daypart": "midday",
-        "rotation_slots_per_day": 1
+        "rotation_slots_per_day": 1,
+        "slots_available": null
       },
       "audience": {
-        "profile": "Midday block, roadside/platform panel; serving North Terminus; value-income area (mixed skew); ~55,124 riders in this block; nearby draws: office park, entertainment district; network hub adjacency.",
+        "profile": "Midday audience near an office park, entertainment district, hospital, and tourist landmark; older than average, with mixed occupations and high footfall.",
         "tags": [
-          "midday",
-          "fixed",
-          "value-income",
-          "mixed",
-          "high-footfall",
           "office_park",
-          "network-hub"
+          "entertainment_district",
+          "hospital",
+          "tourist_landmark",
+          "mixed",
+          "high_footfall"
         ],
         "riders_in_block": 55124.6,
         "daily_riders_exposed": 55125.0,
@@ -1324,5 +1338,5 @@
       }
     }
   ],
-  "narrative": "For a conversion-focused push in LH, this package is essentially fully deployed: 16 unique screens across 16 clusters for 40 days, using 98.1% of the $35,000 budget at a total cost of $34,339.60. The plan is delivering 650,352 projected impressions per day, or 4,552,467 per week, with an average relevance score of 0.722.\n\nThe strongest individual options are all time block 5. LH-SCR-002359 is the most efficient of the top five at $53.65 with 46,114 marginal daily impressions, driven by 76% of the local population in the target age range, a commuter index of 0.51, and nearby tourist landmark POIs. LH-SCR-003593 is also strong at $63.48 and 45,763 impressions, with 86% target-age population plus tourist landmark and office park POIs. LH-SCR-004282 has the highest target-age share in the list at 87%, with 44,251 impressions at $68.53 and office park proximity. LH-SCR-004595 is a good mid-priced option at $58.43 with 44,062 impressions and a 0.53 commuter index. LH-SCR-002514 is similar at $58.86 and 43,674 impressions, with both office park and tourist landmark POIs."
+  "narrative": "For a conversion-focused push in LH, this package is strong on both reach and audience fit: it uses 16 unique screen/time-block pairs over 40 days, with 650,352 projected impressions per day and 4,552,467 per week, while staying just under budget at 34,339.6 of 35,000. The selected set is highly concentrated in the target age bands, with the top screens showing 76% to 87% of local population in the 18_34, 35_54, and 55_plus ranges, plus commuter indices around 0.51 to 0.53. The best-value options to highlight are LH-SCR-002359 at 53.65 for 46,114 marginal daily impressions, LH-SCR-004595 at 58.43 for 44,062, and LH-SCR-002514 at 58.86 for 43,674. If you want to emphasize higher audience concentration, LH-SCR-004282 and LH-SCR-004595 both show 87% in target age ranges, while LH-SCR-003593 combines 86% target-age coverage with nearby tourist_landmark and office_park POIs. One caveat: slot availability was not checked because no start date was provided, so all candidates were assumed available."
 }

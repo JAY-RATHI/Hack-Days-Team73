@@ -4,15 +4,19 @@
 
 ## Campaign
 
-- **Objective:** conversion
+- **Objective:** frequency
 - **Target age:** 20–40
 - **Income tier:** mid
-- **Audience:** style-conscious shoppers, working professional, student, seasonal shoppers, weekend shoppers, post-work weekday evenings
+- **Audience:** style-conscious shoppers, working professional, student, shops seasonally, weekend shoppers, post-work weekday evenings
 - **POI affinities:** shopping_mall
 - **Budget:** 22000.0
 - **Duration:** 20 days
 - **Requested dayparts:** evening
 - **City resolved to:** all cities (none named in brief)
+
+## Caveats — read these
+
+- Brief states no specific start date -- slot availability against existing bookings was NOT checked. All candidates assumed available.
 
 ## Filters applied
 
@@ -29,11 +33,11 @@
 
 ## Summary for the rep
 
-This 20-day conversion package is essentially fully allocated at $21,855.60, using 99.3% of the $22,000 budget. It delivers 840,342 projected impressions per day, or 5,882,396 per week, across 24 unique screens/time-block pairs and 24 clusters, with an average relevance score of 0.715.
+For a frequency buy, this package is strong on reach volume and stays essentially on budget: 24 screen-timeblock pairs across 24 unique screens for 20 days, totaling $21,855.60 against a $22,000 budget (99.3% utilized). Projected delivery is 840,342 impressions per day, or 5,882,396 per week, so it should build repetition quickly.
 
-The strongest options are the evening placements on LH-SCR-004536 and LH-SCR-003202: both match the requested evening daypart, sit in areas where 85% of the local population is in the 18_34/35_54 target range, have a commuter index of 0.52, and are near shopping mall POIs. LH-SCR-004536 is the best value among the top screens at $54.69 with 47,286 marginal daily impressions; LH-SCR-003202 is similar at $56.33 and 46,367 impressions.
+The best-fit screens are LH-SCR-004536 and LH-SCR-003202, both in time block 5, with 85% of the local population in the target age range, commuter index 0.52, evening daypart match, and nearby shopping mall POIs. They also deliver the strongest marginal daily impressions in the set at 47,286 and 46,367, with price targets of $54.69 and $56.33. LH-SCR-003019 is also evening-aligned but has weaker age fit at 57% and a higher price target of $67.52. LH-SCR-002699 is cheaper at $44.14 and still has 45,987 marginal daily impressions, but it is outside the requested evening daypart. LH-SCR-002359 is the weakest of the top five on audience fit at 48% and commuter index 0.51.
 
-LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is outside the requested evening daypart, so it’s the main caveat if daypart alignment matters for conversion. LH-SCR-003019 has weaker age fit at 57% but still matches evening and delivers 45,352 impressions. LH-SCR-002359 is the weakest age match at 48%, though it remains evening-aligned and near shopping malls.
+One caveat: slot availability was not checked, so all candidates were assumed available.
 
 ---
 
@@ -50,8 +54,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0174 (basis: own_history)
 - **Audience reached:** 47,286/day · 331,002/week · 945,720 over the campaign
 - **Standalone reach:** 47,286/day (overlap discount applied: −0)
-- **Who's there:** Evening block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~92,443 riders in this block; nearby draws: university, entertainment district; network hub adjacency.
-- **Audience tags:** evening, fixed, value-income, student, high-footfall, university, network-hub
+- **Who's there:** Evening audience in Uptown Crescent is mostly 18-34, led by students, with nearby university, entertainment district, grocery anchor, and shopping mall.
+- **Audience tags:** young_adults, students, university, entertainment_district, grocery_anchor, shopping_mall
 - **Nearby POIs:** university, entertainment_district, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.6367):** 85% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -68,8 +72,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0426 (basis: own_history)
 - **Audience reached:** 46,367/day · 324,567/week · 927,335 over the campaign
 - **Standalone reach:** 49,678/day (overlap discount applied: −3,311)
-- **Who's there:** Evening block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~97,119 riders in this block; nearby draws: entertainment district, university; network hub adjacency.
-- **Audience tags:** evening, fixed, value-income, student, high-footfall, entertainment_district, network-hub
+- **Who's there:** Evening audience in Uptown Crescent is mostly 18-34, led by students, with nearby entertainment district, university, shopping mall, and residential tower.
+- **Audience tags:** young_adults, students, entertainment_district, university, shopping_mall, residential_tower
 - **Nearby POIs:** entertainment_district, university, residential_tower
 - **Data confidence:** high
 - **Why this screen (relevance 0.6524):** 85% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -86,8 +90,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0964 (basis: own_history)
 - **Audience reached:** 45,987/day · 321,907/week · 919,733 over the campaign
 - **Standalone reach:** 45,987/day (overlap discount applied: −0)
-- **Who's there:** Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~89,903 riders in this block; nearby draws: university, grocery anchor; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, university, network-hub
+- **Who's there:** Midday audience in Uptown Crescent is mostly 18 to 34, student-led, with nearby university, grocery, shopping, and residential places.
+- **Audience tags:** 18_34, student, university, grocery_anchor, shopping_mall, residential_tower
 - **Nearby POIs:** university, grocery_anchor, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.5685):** 85% of local population in target age range (18_34, 35_54); commuter index 0.52; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -104,8 +108,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0318 (basis: own_history)
 - **Audience reached:** 45,352/day · 317,465/week · 907,042 over the campaign
 - **Standalone reach:** 48,591/day (overlap discount applied: −3,239)
-- **Who's there:** Evening block, roadside/platform panel; serving Harborfront; mid-income area (mixed skew); ~94,994 riders in this block; nearby draws: entertainment district, shopping mall; network hub adjacency.
-- **Audience tags:** evening, fixed, mid-income, mixed, high-footfall, entertainment_district, network-hub
+- **Who's there:** Evening audience in Harborfront is older mixed adults, with mixed occupation and nearby entertainment district, shopping mall, grocery anchor, and residential tower.
+- **Audience tags:** older, mixed_occupation, entertainment_district, shopping_mall, grocery_anchor, residential_tower
 - **Nearby POIs:** entertainment_district, shopping_mall, grocery_anchor
 - **Data confidence:** high
 - **Why this screen (relevance 0.8081):** 57% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -122,8 +126,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0474 (basis: own_history)
 - **Audience reached:** 43,495/day · 304,465/week · 869,899 over the campaign
 - **Standalone reach:** 47,705/day (overlap discount applied: −4,210)
-- **Who's there:** Evening block, roadside/platform panel; serving North Terminus; value-income area (mixed skew); ~93,262 riders in this block; nearby draws: tourist landmark, entertainment district; network hub adjacency.
-- **Audience tags:** evening, fixed, value-income, mixed, high-footfall, tourist_landmark, network-hub
+- **Who's there:** Evening audience in North Terminus is older, with mixed occupation and nearby tourist landmark, entertainment district, shopping mall, and residential tower.
+- **Audience tags:** older, mixed_occupation, tourist_landmark, entertainment_district, shopping_mall, residential_tower
 - **Nearby POIs:** tourist_landmark, entertainment_district, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.6485):** 48% of local population in target age range (18_34, 35_54); commuter index 0.51; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -140,8 +144,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0006 (basis: own_history)
 - **Audience reached:** 42,846/day · 299,920/week · 856,914 over the campaign
 - **Standalone reach:** 42,846/day (overlap discount applied: −0)
-- **Who's there:** Evening block, roadside/platform panel; serving Market Quarter; mid-income area (retail_service skew); ~83,763 riders in this block; nearby draws: grocery anchor, shopping mall; network hub adjacency.
-- **Audience tags:** evening, fixed, mid-income, retail_service, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Evening audience in Market Quarter is mixed in age, with retail service work and nearby grocery anchor, entertainment district, shopping mall, and government building.
+- **Audience tags:** mixed_age, retail_service, grocery_anchor, entertainment_district, shopping_mall, government_building
 - **Nearby POIs:** grocery_anchor, shopping_mall, entertainment_district
 - **Data confidence:** high
 - **Why this screen (relevance 0.7908):** 63% of local population in target age range (18_34, 35_54); commuter index 0.53; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -158,8 +162,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0212 (basis: own_history)
 - **Audience reached:** 42,349/day · 296,442/week · 846,977 over the campaign
 - **Standalone reach:** 44,503/day (overlap discount applied: −2,154)
-- **Who's there:** Midday block, roadside/platform panel; serving Uptown Crescent; value-income area (student skew); ~87,002 riders in this block; nearby draws: grocery anchor, university; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience in Uptown Crescent is mostly 18 to 34, student-led, with nearby university, grocery, shopping, and entertainment places.
+- **Audience tags:** 18_34, student, university, grocery_anchor, shopping_mall, entertainment_district
 - **Nearby POIs:** grocery_anchor, university, entertainment_district
 - **Data confidence:** high
 - **Why this screen (relevance 0.5534):** 85% of local population in target age range (18_34, 35_54); commuter index 0.52; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -176,8 +180,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0525 (basis: own_history)
 - **Audience reached:** 41,769/day · 292,385/week · 835,386 over the campaign
 - **Standalone reach:** 45,812/day (overlap discount applied: −4,043)
-- **Who's there:** Evening block, roadside/platform panel; serving Old Mill District; value-income area (blue_collar skew); ~89,562 riders in this block; nearby draws: grocery anchor, hospital; network hub adjacency.
-- **Audience tags:** evening, fixed, value-income, blue_collar, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Evening audience in Old Mill District is older, with blue collar work and nearby government building, shopping mall, hospital, and grocery anchor.
+- **Audience tags:** older, blue_collar, government_building, shopping_mall, hospital, grocery_anchor
 - **Nearby POIs:** grocery_anchor, hospital, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.6887):** 53% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -194,8 +198,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.003 (basis: own_history)
 - **Audience reached:** 36,918/day · 258,427/week · 738,363 over the campaign
 - **Standalone reach:** 36,918/day (overlap discount applied: −0)
-- **Who's there:** Evening block, roadside/platform panel; serving Founders Square; value-income area (retail_service skew); ~72,174 riders in this block; nearby draws: shopping mall, grocery anchor; network hub adjacency.
-- **Audience tags:** evening, fixed, value-income, retail_service, high-footfall, shopping_mall, network-hub
+- **Who's there:** Evening audience in Founders Square is mixed in age, with retail service work and nearby shopping mall, entertainment district, government building, and grocery anchor.
+- **Audience tags:** mixed_age, retail_service, shopping_mall, entertainment_district, government_building, grocery_anchor
 - **Nearby POIs:** shopping_mall, grocery_anchor, entertainment_district
 - **Data confidence:** high
 - **Why this screen (relevance 0.922):** 64% of local population in target age range (18_34, 35_54); commuter index 0.54; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -212,8 +216,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0269 (basis: own_history)
 - **Audience reached:** 36,843/day · 257,903/week · 736,867 over the campaign
 - **Standalone reach:** 39,010/day (overlap discount applied: −2,167)
-- **Who's there:** Evening block, roadside/platform panel; serving Union Flats; mid-income area (mixed skew); ~76,265 riders in this block; nearby draws: grocery anchor, shopping mall; network hub adjacency.
-- **Audience tags:** evening, fixed, mid-income, mixed, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Evening audience in Union Flats is mixed in age, with mixed occupation and nearby grocery anchor, shopping mall, office park, and tourist landmark.
+- **Audience tags:** mixed_age, mixed_occupation, grocery_anchor, shopping_mall, office_park, tourist_landmark
 - **Nearby POIs:** grocery_anchor, shopping_mall, tourist_landmark
 - **Data confidence:** high
 - **Why this screen (relevance 0.7765):** 68% of local population in target age range (18_34, 35_54); commuter index 0.54; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -230,8 +234,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0909 (basis: own_history)
 - **Audience reached:** 36,071/day · 252,498/week · 721,424 over the campaign
 - **Standalone reach:** 37,874/day (overlap discount applied: −1,803)
-- **Who's there:** Midday block, roadside/platform panel; serving Bellwood; value-income area (student skew); ~74,043 riders in this block; nearby draws: grocery anchor, shopping mall; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience in Bellwood is mostly 18 to 34, student-led, with nearby grocery, shopping, university, and entertainment places.
+- **Audience tags:** 18_34, student, grocery_anchor, shopping_mall, university, entertainment_district
 - **Nearby POIs:** grocery_anchor, shopping_mall, university
 - **Data confidence:** high
 - **Why this screen (relevance 0.6583):** 82% of local population in target age range (18_34, 35_54); commuter index 0.52; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -248,8 +252,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0627 (basis: own_history)
 - **Audience reached:** 35,381/day · 247,666/week · 707,618 over the campaign
 - **Standalone reach:** 39,145/day (overlap discount applied: −3,764)
-- **Who's there:** Evening block, roadside/platform panel; serving Bellwood; value-income area (student skew); ~76,527 riders in this block; nearby draws: residential tower, grocery anchor; network hub adjacency.
-- **Audience tags:** evening, fixed, value-income, student, high-footfall, residential_tower, network-hub
+- **Who's there:** Evening audience in Bellwood is mostly 18-34, led by students, with nearby residential tower, entertainment district, grocery anchor, and university.
+- **Audience tags:** young_adults, students, residential_tower, entertainment_district, grocery_anchor, university
 - **Nearby POIs:** residential_tower, grocery_anchor, entertainment_district
 - **Data confidence:** high
 - **Why this screen (relevance 0.6148):** 82% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); no nearby POIs match requested type(s): shopping_mall
@@ -266,8 +270,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0837 (basis: own_history)
 - **Audience reached:** 34,746/day · 243,223/week · 694,924 over the campaign
 - **Standalone reach:** 36,790/day (overlap discount applied: −2,044)
-- **Who's there:** Evening block, roadside/platform panel; serving Union Flats; mid-income area (mixed skew); ~71,924 riders in this block; nearby draws: shopping mall, residential tower; network hub adjacency.
-- **Audience tags:** evening, fixed, mid-income, mixed, high-footfall, shopping_mall, network-hub
+- **Who's there:** Evening audience in Union Flats is mixed in age, with mixed occupation and nearby shopping mall, residential tower, grocery anchor, and entertainment district.
+- **Audience tags:** mixed_age, mixed_occupation, shopping_mall, residential_tower, grocery_anchor, entertainment_district
 - **Nearby POIs:** shopping_mall, residential_tower, grocery_anchor
 - **Data confidence:** high
 - **Why this screen (relevance 0.9208):** 68% of local population in target age range (18_34, 35_54); commuter index 0.54; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -284,8 +288,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0358 (basis: own_history)
 - **Audience reached:** 34,105/day · 238,734/week · 682,097 over the campaign
 - **Standalone reach:** 36,631/day (overlap discount applied: −2,526)
-- **Who's there:** Evening block, roadside/platform panel; serving Milltown; value-income area (blue_collar skew); ~71,612 riders in this block; nearby draws: government building, shopping mall; network hub adjacency.
-- **Audience tags:** evening, fixed, value-income, blue_collar, high-footfall, government_building, network-hub
+- **Who's there:** Evening audience in Milltown is older, with blue collar work and nearby government building, shopping mall, hospital, and residential tower.
+- **Audience tags:** older, blue_collar, government_building, shopping_mall, hospital, residential_tower
 - **Nearby POIs:** government_building, shopping_mall, hospital
 - **Data confidence:** high
 - **Why this screen (relevance 0.6775):** 52% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -302,8 +306,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0382 (basis: own_history)
 - **Audience reached:** 33,897/day · 237,277/week · 677,934 over the campaign
 - **Standalone reach:** 37,503/day (overlap discount applied: −3,606)
-- **Who's there:** Midday block, roadside/platform panel; serving Bellwood; value-income area (student skew); ~73,317 riders in this block; nearby draws: university, residential tower; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, university, network-hub
+- **Who's there:** Midday audience in Bellwood is mostly 18 to 34, student-led, with nearby university, grocery, residential, and entertainment places.
+- **Audience tags:** 18_34, student, university, grocery_anchor, residential_tower, entertainment_district
 - **Nearby POIs:** university, residential_tower, grocery_anchor
 - **Data confidence:** high
 - **Why this screen (relevance 0.4948):** 82% of local population in target age range (18_34, 35_54); commuter index 0.52; outside requested daypart(s) (evening); no nearby POIs match requested type(s): shopping_mall
@@ -320,8 +324,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0158 (basis: own_history)
 - **Audience reached:** 31,071/day · 217,494/week · 621,413 over the campaign
 - **Standalone reach:** 32,898/day (overlap discount applied: −1,827)
-- **Who's there:** Evening block, roadside/platform panel; serving Riverside Junction; mid-income area (mixed skew); ~64,315 riders in this block; nearby draws: shopping mall, residential tower; network hub adjacency.
-- **Audience tags:** evening, fixed, mid-income, mixed, high-footfall, shopping_mall, network-hub
+- **Who's there:** Evening audience in Riverside Junction is mixed in age, with mixed occupation and nearby residential tower, shopping mall, and government building.
+- **Audience tags:** mixed_age, mixed_occupation, residential_tower, shopping_mall, government_building
 - **Nearby POIs:** shopping_mall, residential_tower, government_building
 - **Data confidence:** high
 - **Why this screen (relevance 0.9166):** 70% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -338,8 +342,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0283 (basis: own_history)
 - **Audience reached:** 28,850/day · 201,953/week · 577,010 over the campaign
 - **Standalone reach:** 30,547/day (overlap discount applied: −1,697)
-- **Who's there:** Midday block, roadside/platform panel; serving Kestrel Heights; mid-income area (mixed skew); ~59,720 riders in this block; nearby draws: shopping mall, residential tower; network hub adjacency.
-- **Audience tags:** midday, fixed, mid-income, mixed, high-footfall, shopping_mall, network-hub
+- **Who's there:** Midday audience in Kestrel Heights is mixed-age, with a median age of 40.0, mixed occupation, and nearby shopping, hospital, government, and residential places.
+- **Audience tags:** mixed_age, mixed, shopping_mall, hospital, government_building, residential_tower
 - **Nearby POIs:** shopping_mall, residential_tower, hospital
 - **Data confidence:** high
 - **Why this screen (relevance 0.7524):** 53% of local population in target age range (18_34, 35_54); commuter index 0.54; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -356,8 +360,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0042 (basis: own_history)
 - **Audience reached:** 28,386/day · 198,705/week · 567,727 over the campaign
 - **Standalone reach:** 28,386/day (overlap discount applied: −0)
-- **Who's there:** Evening block, roadside/platform panel; serving Fallowfield; value-income area (student skew); ~55,495 riders in this block; nearby draws: residential tower, entertainment district; network hub adjacency.
-- **Audience tags:** evening, fixed, value-income, student, high-footfall, residential_tower, network-hub
+- **Who's there:** Evening audience in Fallowfield is mostly 18-34, led by students, with nearby entertainment district, residential tower, grocery anchor, and shopping mall.
+- **Audience tags:** young_adults, students, entertainment_district, residential_tower, grocery_anchor, shopping_mall
 - **Nearby POIs:** residential_tower, entertainment_district, grocery_anchor
 - **Data confidence:** high
 - **Why this screen (relevance 0.6769):** 85% of local population in target age range (18_34, 35_54); commuter index 0.52; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -374,8 +378,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.131 (basis: own_history)
 - **Audience reached:** 26,900/day · 188,298/week · 537,994 over the campaign
 - **Standalone reach:** 26,900/day (overlap discount applied: −0)
-- **Who's there:** Midday block, roadside/platform panel; serving Fallowfield; value-income area (student skew); ~52,588 riders in this block; nearby draws: grocery anchor, stadium arena; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, student, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience in Fallowfield is mostly 18 to 34, student-led, with nearby grocery, stadium, university, shopping, and residential places.
+- **Audience tags:** 18_34, student, grocery_anchor, stadium_arena, university, shopping_mall, residential_tower
 - **Nearby POIs:** grocery_anchor, stadium_arena, shopping_mall
 - **Data confidence:** high
 - **Why this screen (relevance 0.5334):** 85% of local population in target age range (18_34, 35_54); commuter index 0.51; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -392,8 +396,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.134 (basis: own_history)
 - **Audience reached:** 25,063/day · 175,444/week · 501,268 over the campaign
 - **Standalone reach:** 26,992/day (overlap discount applied: −1,929)
-- **Who's there:** Midday block, roadside/platform panel; serving Northbank; value-income area (mixed skew); ~52,769 riders in this block; nearby draws: shopping mall, tourist landmark; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, mixed, high-footfall, shopping_mall, network-hub
+- **Who's there:** Midday audience in Northbank is mixed-age, with a median age of 40.8, mixed occupation, and nearby shopping, university, tourist, and grocery places.
+- **Audience tags:** mixed_age, mixed, shopping_mall, university, tourist_landmark, grocery_anchor
 - **Nearby POIs:** shopping_mall, tourist_landmark, university
 - **Data confidence:** high
 - **Why this screen (relevance 0.7382):** 52% of local population in target age range (18_34, 35_54); commuter index 0.51; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -410,8 +414,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0011 (basis: own_history)
 - **Audience reached:** 24,485/day · 171,393/week · 489,693 over the campaign
 - **Standalone reach:** 28,937/day (overlap discount applied: −4,452)
-- **Who's there:** Midday block, roadside/platform panel; serving Windmere Park; value-income area (blue_collar skew); ~56,570 riders in this block; nearby draws: grocery anchor, residential tower; network hub adjacency.
-- **Audience tags:** midday, fixed, value-income, blue_collar, high-footfall, grocery_anchor, network-hub
+- **Who's there:** Midday audience in Windmere Park is mixed-age, with a median age of 43.1, blue-collar occupation, and nearby grocery, residential, shopping, and entertainment places.
+- **Audience tags:** mixed_age, blue_collar, grocery_anchor, residential_tower, shopping_mall, entertainment_district
 - **Nearby POIs:** grocery_anchor, residential_tower, entertainment_district
 - **Data confidence:** high
 - **Why this screen (relevance 0.5004):** 56% of local population in target age range (18_34, 35_54); commuter index 0.51; outside requested daypart(s) (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -428,8 +432,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.0203 (basis: own_history)
 - **Audience reached:** 24,367/day · 170,568/week · 487,337 over the campaign
 - **Standalone reach:** 25,800/day (overlap discount applied: −1,433)
-- **Who's there:** Evening block, roadside/platform panel; serving Ashford Row; mid-income area (mixed skew); ~50,439 riders in this block; nearby draws: shopping mall, office park; network hub adjacency.
-- **Audience tags:** evening, fixed, mid-income, mixed, high-footfall, shopping_mall, network-hub
+- **Who's there:** Evening audience in Ashford Row is older mixed adults, with mixed occupation and nearby shopping mall, office park, and residential tower.
+- **Audience tags:** older, mixed_occupation, shopping_mall, office_park, residential_tower
 - **Nearby POIs:** shopping_mall, office_park, residential_tower
 - **Data confidence:** high
 - **Why this screen (relevance 0.8927):** 56% of local population in target age range (18_34, 35_54); commuter index 0.54; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -446,8 +450,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.067 (basis: own_history)
 - **Audience reached:** 24,274/day · 169,916/week · 485,475 over the campaign
 - **Standalone reach:** 25,701/day (overlap discount applied: −1,428)
-- **Who's there:** Evening block, roadside/platform panel; serving Milltown; value-income area (blue_collar skew); ~50,246 riders in this block; nearby draws: shopping mall, residential tower; network hub adjacency.
-- **Audience tags:** evening, fixed, value-income, blue_collar, high-footfall, shopping_mall, network-hub
+- **Who's there:** Evening audience in Milltown is older, with blue collar work and nearby shopping mall, residential tower, and government building.
+- **Audience tags:** older, blue_collar, shopping_mall, residential_tower, government_building
 - **Nearby POIs:** shopping_mall, residential_tower, government_building
 - **Data confidence:** high
 - **Why this screen (relevance 0.8667):** 52% of local population in target age range (18_34, 35_54); commuter index 0.54; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
@@ -464,8 +468,8 @@ LH-SCR-002699 is cheaper at $44.14 and still has 45,987 impressions, but it is o
 - **Demand:** score 0.1558 (basis: own_history)
 - **Audience reached:** 23,535/day · 164,744/week · 470,698 over the campaign
 - **Standalone reach:** 27,814/day (overlap discount applied: −4,279)
-- **Who's there:** Evening block, roadside/platform panel; serving Greenhollow; mid-income area (mixed skew); ~54,376 riders in this block; nearby draws: shopping mall, grocery anchor; network hub adjacency.
-- **Audience tags:** evening, fixed, mid-income, mixed, high-footfall, shopping_mall, network-hub
+- **Who's there:** Evening audience in Greenhollow is older, with a median age of 47.1, mixed occupation, and nearby shopping mall, residential tower, university, and grocery anchor.
+- **Audience tags:** older, mixed_occupation, shopping_mall, residential_tower, university, grocery_anchor
 - **Nearby POIs:** shopping_mall, grocery_anchor, residential_tower
 - **Data confidence:** high
 - **Why this screen (relevance 0.8675):** 53% of local population in target age range (18_34, 35_54); commuter index 0.51; matches requested daypart (evening); nearby shopping_mall POI(s) relevant to campaign
