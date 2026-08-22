@@ -1,0 +1,43 @@
+======================================================================
+SECTION 1: Brief parser
+======================================================================
+[PASS] parse BRIEF_01_full_spec
+    city_hint='Las Hackland'  requires_broad_coverage=False  target_zones_text=['Las Hackland', 'downtown/financial corridor']
+[PASS] parse BRIEF_02_no_budget
+    city_hint='DA Town'  requires_broad_coverage=True  target_zones_text=[]
+[PASS] parse BRIEF_03_vague
+    city_hint='Accordionshire'  requires_broad_coverage=False  target_zones_text=[]
+[PASS] no-budget brief -> budget is null, not invented — got budget=None
+
+======================================================================
+SECTION 2: Demand index
+======================================================================
+[PASS] demand_index.py runs without error
+[PASS] row count = screens x 6 — 66978 vs expected 66978
+confidence distribution: {'own_history': 45221, 'inferred_cluster': 19507, 'inferred_city': 2250}
+[PASS] cold-start hierarchy has more than one tier represented — {'own_history': 45221, 'inferred_cluster': 19507, 'inferred_city': 2250}
+[PASS] demand_score in [0,1] — min=0.0003, max=0.6698
+
+======================================================================
+SECTION 3: Price bands
+======================================================================
+[PASS] price_bands.py runs without error
+[PASS] row count = screens x 6 — 66978 vs expected 66978
+[PASS] floor <= target <= cap holds for every row (CRITICAL)
+[PASS] no null prices
+[PASS] positive correlation between demand_score and price_target — correlation = 0.387
+
+======================================================================
+SECTION 4: End-to-end merge on sample briefs
+======================================================================
+[PASS] BRIEF_01_full_spec -> non-empty scored+priced result — 37824 screens, meta={'city_id': 'LH', 'zone_ids': None, 'n_screens_scored': 37824}
+[PASS] BRIEF_01_full_spec -> top reason references real evidence, not generic — 66% of local population in target age range (18_34); commuter index 0.52; matches requested daypart 
+[PASS] BRIEF_02_no_budget -> non-empty scored+priced result — 18738 screens, meta={'city_id': 'DAT', 'zone_ids': None, 'n_screens_scored': 18738}
+[PASS] BRIEF_02_no_budget -> top reason references real evidence, not generic — 66% of local population in target age range (35_54, 55_plus); non-commuter/leisure index 0.61; no ne
+[PASS] BRIEF_03_vague -> non-empty scored+priced result — 10416 screens, meta={'city_id': 'ACS', 'zone_ids': None, 'n_screens_scored': 10416}
+[PASS] BRIEF_03_vague -> top reason references real evidence, not generic — no age target stated; non-commuter/leisure index 0.62; matches requested daypart (evening); no POI a
+
+======================================================================
+SUMMARY
+======================================================================
+PASS: 19   WARN: 0   FAIL: 0
